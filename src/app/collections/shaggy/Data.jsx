@@ -43,7 +43,7 @@ export default function Data() {
 
         <div className="product-desc">
           <div className="product-title">
-            <h1>Shaggy Construction</h1>
+            <h1>Shaggy</h1>
           </div>
           <div className="product-content">
             <p>

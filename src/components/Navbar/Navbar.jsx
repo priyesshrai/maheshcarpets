@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className="logo-container">
           <div className="logo-wraper">
             <a href="/">
-              <Image src="/images/logo/logo-01.jpeg" alt="logo" width={200} height={200} />
+              <Image src="/images/logo/logo-01.jpeg" alt="logo" width={200} height={96} />
             </a>
 
             <div className="new-na">
@@ -35,7 +35,7 @@ export default function Navbar() {
                 Mahesh Carpets
               </a>
               <div className="blank">
-                <Image src='/images/logo/new.png' width={200} height={120} alt="logo" />
+                <Image src='/images/logo/new.png' width={200} height={40} alt="logo" />
               </div>
             </div>
           </div>
