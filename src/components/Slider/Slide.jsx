@@ -11,7 +11,6 @@ import {
 import Image from "next/image";
 
 const images = [
-  { src: "/images/gallery/gallery-pic-01.jpg", alt: "Gallery Picture" },
   { src: "/images/gallery/gallery-pic-02.png", alt: "Gallery Picture" },
   { src: "/images/gallery/gallery-pic-03.png", alt: "Gallery Picture" },
   { src: "/images/gallery/gallery-pic-04.png", alt: "Gallery Picture" },
@@ -22,6 +21,7 @@ const images = [
   { src: "/images/gallery/gallery-pic-09.png", alt: "Gallery Picture" },
   { src: "/images/gallery/gallery-pic-10.png", alt: "Gallery Picture" },
   { src: "/images/gallery/gallery-pic-11.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-01.jpg", alt: "Gallery Picture" },
 ];
 
 export default function Slide() {

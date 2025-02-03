@@ -62,9 +62,9 @@ export default function page() {
               accessories, including:
             </p>
             <ol start="I">
-              <li>I. Plush cushions</li>
+              <li>I. Plush Cushions</li>
               <li>II. Wall Arts</li>
-              <li>III. Versatile ottomans</li>
+              <li>III. Versatile Ottomans</li>
             </ol>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default function page() {
               <p>Uttar Pradesh - 221401</p>
 
             <span>
-              <i class="hgi-stroke hgi-flip-phone" /> +91-9918639000
+              <i class="hgi-stroke hgi-flip-phone" /> +91-9415201178
             </span>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function page() {
             <p>New Delhi - 110048</p>
 
             <span>
-              <i class="hgi-stroke hgi-flip-phone" /> +91-9415201178
+              <i class="hgi-stroke hgi-flip-phone" /> +91-9918639000
             </span>
           </div>
         </div>
