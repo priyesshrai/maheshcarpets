@@ -48,7 +48,7 @@ export default function Data() {
                 <h1>Asymmetrical Rugs</h1>
               </div>
               <div className="product-banner">
-                <Image src='/images/shaped/banner.jpg' style={{ height: '500px', objectFit: "cover" }} width={1000} height={1000} alt="Flatweave banner" className="bann-img" />
+                <Image src='/images/shaped/banner.png' style={{ height: '500px', objectFit: "cover" }} width={1000} height={1000} alt="Flatweave banner" className="bann-img" />
               </div>
               <div className="product-content">
                 <p>

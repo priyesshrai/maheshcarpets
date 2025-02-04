@@ -224,7 +224,7 @@ export const handloomData = [
 export const handTufted = [
   {
     id: "fe-mc-02",
-    src: "/images/handTufted/01.jpg",
+    src: "/images/handTufted/01.png",
     alt: "A Black, Ivory hand tufted product",
     name: "FE-MC-02",
     color: "Black, Ivory",
@@ -235,7 +235,7 @@ export const handTufted = [
   },
   {
     id: "fe-mc-03",
-    src: "/images/handTufted/02.jpg",
+    src: "/images/handTufted/02.png",
     alt: "A Black, Gray hand tufted product",
     name: "FE-MC-03",
     color: "Black, Gray",
@@ -246,7 +246,7 @@ export const handTufted = [
   },
   {
     id: "fe-mc-21",
-    src: "/images/handTufted/03.jpg",
+    src: "/images/handTufted/03.png",
     alt: "A Green, Ivory, Multi hand tufted product",
     name: "FE-MC-21",
     color: "Green, Ivory, Multi",
@@ -257,7 +257,7 @@ export const handTufted = [
   },
   {
     id: "hm-mct-01",
-    src: "/images/handTufted/04.jpg",
+    src: "/images/handTufted/04.png",
     alt: "A Green, Olive hand tufted product",
     name: "HM-MCT-01",
     color: "Green, Olive",
@@ -268,7 +268,7 @@ export const handTufted = [
   },
   {
     id: "hm-mct-01-brown",
-    src: "/images/handTufted/05.jpg",
+    src: "/images/handTufted/05.png",
     alt: "A Brown hand tufted product",
     name: "HM-MCT-01",
     color: "Brown",
@@ -279,7 +279,7 @@ export const handTufted = [
   },
   {
     id: "t-mc-197",
-    src: "/images/handTufted/06.jpg",
+    src: "/images/handTufted/06.png",
     alt: "A Black, Silver hand tufted product",
     name: "T-MC-197",
     color: "Black, Silver",
@@ -290,7 +290,7 @@ export const handTufted = [
   },
   {
     id: "t-mc-199",
-    src: "/images/handTufted/07.jpg",
+    src: "/images/handTufted/07.png",
     alt: "A Grey, Multi hand tufted product",
     name: "T-MC-199",
     color: " Grey, Multi",
@@ -301,7 +301,7 @@ export const handTufted = [
   },
   {
     id: "t-mc-230",
-    src: "/images/handTufted/08.jpg",
+    src: "/images/handTufted/08.png",
     alt: "A Brown, Gold, Ivory hand tufted product",
     name: "T-MC-230",
     color: "Brown, Gold, Ivory",
@@ -687,7 +687,7 @@ export const handKnotted = [
 export const bespoke = [
   {
     id: "cr-2304-06",
-    src: "/images/bespoke/01.jpg",
+    src: "/images/bespoke/01.png",
     alt: "A Gray rust HAND TUFTED product",
     name: "CR-2304-06",
     color: "Gray rust",
@@ -698,7 +698,7 @@ export const bespoke = [
   },
   {
     id: "cr-2304-07",
-    src: "/images/bespoke/02.jpg",
+    src: "/images/bespoke/02.png",
     alt: "A Gray Pink HAND TUFTED product",
     name: "CR-2304-07",
     color: "Gray Pink",
@@ -709,7 +709,7 @@ export const bespoke = [
   },
   {
     id: "cr-2311-01",
-    src: "/images/bespoke/03.jpg",
+    src: "/images/bespoke/03.png",
     alt: "A Ivory Blue Rust HAND TUFTED product",
     name: "CR-2311-01",
     color: "Ivory Blue Rust",
@@ -720,7 +720,7 @@ export const bespoke = [
   },
   {
     id: "cr-2310-01",
-    src: "/images/bespoke/04.jpg",
+    src: "/images/bespoke/04.png",
     alt: "A Ivory Black Rust HAND TUFTED product",
     name: "CR-2310-01",
     color: "Ivory Black Rust",
@@ -731,7 +731,7 @@ export const bespoke = [
   },
   {
     id: "cr-2401-14",
-    src: "/images/bespoke/05.jpg",
+    src: "/images/bespoke/05.png",
     alt: "A Blue Gold HAND TUFTED product",
     name: "CR-2401-14",
     color: "Blue Gold",
@@ -742,7 +742,7 @@ export const bespoke = [
   },
   {
     id: "jn-101",
-    src: "/images/bespoke/06.jpg",
+    src: "/images/bespoke/06.png",
     alt: "A Brown Green Multi HAND TUFTED product",
     name: "JN-101",
     color: "Brown Green Multi",
@@ -753,7 +753,7 @@ export const bespoke = [
   },
   {
     id: "jn-101-a",
-    src: "/images/bespoke/07.jpg",
+    src: "/images/bespoke/07.png",
     alt: "A Brown Red Multi HAND TUFTED product",
     name: "JN-101-A",
     color: "Brown Red Multi",
@@ -764,7 +764,7 @@ export const bespoke = [
   },
   {
     id: "sk-1008",
-    src: "/images/bespoke/08.jpg",
+    src: "/images/bespoke/08.png",
     alt: "A Silver Blue Multi HAND TUFTED product",
     name: "SK-1008",
     color: "Silver Blue",
@@ -775,7 +775,7 @@ export const bespoke = [
   },
   {
     id: "cr-2401-19",
-    src: "/images/bespoke/09.jpg",
+    src: "/images/bespoke/09.png",
     alt: "A Multi HAND TUFTED product",
     name: "CR-2401-19",
     color: "Multi",
@@ -786,7 +786,7 @@ export const bespoke = [
   },
   {
     id: "ct-136",
-    src: "/images/bespoke/10.jpg",
+    src: "/images/bespoke/10.png",
     alt: "A Grey Charcoal HAND TUFTED product",
     name: "ct-136",
     color: "Grey Charcoal",
@@ -797,7 +797,7 @@ export const bespoke = [
   },
   {
     id: "cr-2401-22",
-    src: "/images/bespoke/11.jpg",
+    src: "/images/bespoke/11.png",
     alt: "A Multi HAND TUFTED product",
     name: "cr-2401-22",
     color: "Multi",
@@ -808,7 +808,7 @@ export const bespoke = [
   },
   {
     id: "cr-2311-06",
-    src: "/images/bespoke/12.jpg",
+    src: "/images/bespoke/12.png",
     alt: "A Ivory Grey Blue HAND TUFTED product",
     name: "CR-2311-06",
     color: "Ivory Grey Blue",
@@ -822,7 +822,7 @@ export const bespoke = [
 export const shaped =[
   {
     id: "cr-2408-76",
-    src: "/images/shaped/01.jpg",
+    src: "/images/shaped/01.png",
     alt: "A Ivory LT.Grey HAND TUFTED product",
     name: "CR-2408-76",
     color: "Ivory LT.Grey",
@@ -833,7 +833,7 @@ export const shaped =[
   },
   {
     id: "cr-2403-26",
-    src: "/images/shaped/02.jpg",
+    src: "/images/shaped/02.png",
     alt: "A Multi HAND TUFTED product",
     name: "CR-2403-26",
     color: "Multi",
@@ -844,7 +844,7 @@ export const shaped =[
   },
   {
     id: "cr-2403-24",
-    src: "/images/shaped/03.jpg",
+    src: "/images/shaped/03.png",
     alt: "A Multi HAND TUFTED product",
     name: "CR-2403-24",
     color: "Multi",
@@ -855,7 +855,7 @@ export const shaped =[
   },
   {
     id: "cr-2403-25",
-    src: "/images/shaped/04.jpg",
+    src: "/images/shaped/04.png",
     alt: "A Multi HAND TUFTED product",
     name: "cr-2403-25",
     color: "Multi",
@@ -866,7 +866,7 @@ export const shaped =[
   },
   {
     id: "cr-2406-54-a",
-    src: "/images/shaped/05.jpg",
+    src: "/images/shaped/05.png",
     alt: "A Ivory Black HAND TUFTED product",
     name: "CR-2406-54-A",
     color: "Ivory Black",
@@ -877,7 +877,7 @@ export const shaped =[
   },
   {
     id: "cr-2406-56-a",
-    src: "/images/shaped/06.jpg",
+    src: "/images/shaped/06.png",
     alt: "A Ivory HAND TUFTED product",
     name: "CR-2406-56-A",
     color: "Ivory",
@@ -888,7 +888,7 @@ export const shaped =[
   },
   {
     id: "cr-2408-63",
-    src: "/images/shaped/07.jpg",
+    src: "/images/shaped/07.png",
     alt: "A Ivory Black HAND TUFTED product",
     name: "CR-2408-63",
     color: "Ivory Black",
@@ -899,7 +899,7 @@ export const shaped =[
   },
   {
     id: "cr-2408-72",
-    src: "/images/shaped/08.jpg",
+    src: "/images/shaped/08.png",
     alt: "A Ivory Brown HAND TUFTED product",
     name: "CR-2408-72",
     color: "Ivory Brown",
@@ -910,7 +910,7 @@ export const shaped =[
   },
   {
     id: "cr-2408-73",
-    src: "/images/shaped/09.jpg",
+    src: "/images/shaped/09.png",
     alt: "A Ivory Brown Black HAND TUFTED product",
     name: "CR-2408-73",
     color: "Ivory Brown Black",
@@ -921,7 +921,7 @@ export const shaped =[
   },
   {
     id: "cr-2408-78",
-    src: "/images/shaped/10.jpg",
+    src: "/images/shaped/10.png",
     alt: "A Beige HAND TUFTED product",
     name: "CR-2408-78",
     color: "Beige",

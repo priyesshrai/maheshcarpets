@@ -1,9 +1,14 @@
+import Image from "next/image";
 
 export default function page() {
 
   return (
     <section className='section' style={{ backgroundColor: "#fff", paddingBottom: "0" }}>
       <div className="section-wraper">
+        <div className="contact-img-container">
+          <Image src='/images/contact.JPG' width={1000} height={300} alt="contact" />
+        </div>
+
         <div className="section-wraper-box">
           <div className="location-container">
             <div className="location-heading">
@@ -27,7 +32,7 @@ export default function page() {
             </div>
             <p>Main Road, Maryadpatti
               Bhadohi.</p>
-              <p>Uttar Pradesh - 221401</p>
+            <p>Uttar Pradesh - 221401</p>
 
             <span>
               <i class="hgi-stroke hgi-flip-phone" /> +91-9415201178
