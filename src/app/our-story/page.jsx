@@ -39,7 +39,7 @@ export default function page() {
             </div>
           </div>
           <div className="about-image">
-            <img src="/images/our-story.jpeg" alt="" />
+            <img src="/images/our-story.jpg" alt="" />
           </div>
         </div>
 
