@@ -48,7 +48,7 @@ export default function Data() {
                 <h1>Hand Knotted</h1>
               </div>
               <div className="product-banner">
-                <Image src='/images/hand-knotted/banner.jpg' width={1000} height={1000} alt="Flatweave banner" />
+                <Image src='/images/hand-knotted/banner.jpg' width={500} height={500} alt="Flatweave banner" />
               </div>
               <div className="product-content">
                 <p>
@@ -74,8 +74,8 @@ export default function Data() {
                     <div className="product-img">
                       <Image
                         src={data.src}
-                        width={500}
-                        height={500}
+                        width={280}
+                        height={420}
                         alt={data.alt}
                       />
                     </div>

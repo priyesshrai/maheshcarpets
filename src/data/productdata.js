@@ -585,7 +585,7 @@ export const shaggy = [
 export const handKnotted = [
   {
     id: "pc-mcm-69",
-    src: "/images/hand-knotted/03.jpg",
+    src: "/images/hand-knotted/03.png",
     alt: "A Beige Multi hand knotted product",
     name: "PC-MCM-69",
     color: "Beige Multi",
@@ -596,7 +596,7 @@ export const handKnotted = [
   },
   {
     id: "pc-mcm-59",
-    src: "/images/hand-knotted/02.jpg",
+    src: "/images/hand-knotted/02.png",
     alt: "A Blue Silver hand knotted product",
     name: "PC-MCM-59",
     color: "Blue Silver",
@@ -607,7 +607,7 @@ export const handKnotted = [
   },
   {
     id: "pc-mcm-51",
-    src: "/images/hand-knotted/01.jpg",
+    src: "/images/hand-knotted/01.png",
     alt: "A Camel Brown hand knotted product",
     name: "PC-MCM-51",
     color: "Camel Brown",
@@ -618,7 +618,7 @@ export const handKnotted = [
   },
   {
     id: "pc-mc-54",
-    src: "/images/hand-knotted/04.jpg",
+    src: "/images/hand-knotted/04.png",
     alt: "A Gray Blue hand knotted product",
     name: "PC-MC-54",
     color: "Gray Blue",
@@ -629,7 +629,7 @@ export const handKnotted = [
   },
   {
     id: "pc-mc-50",
-    src: "/images/hand-knotted/05.jpg",
+    src: "/images/hand-knotted/05.png",
     alt: "A Gold Green hand knotted product",
     name: "PC-MC-50",
     color: "Gold Green",
@@ -640,7 +640,7 @@ export const handKnotted = [
   },
   {
     id: "kv-mc-335-a",
-    src: "/images/hand-knotted/06.jpg",
+    src: "/images/hand-knotted/06.png",
     alt: "A Multi hand knotted product",
     name: "KV-MC-335-A",
     color: "Multi",
@@ -651,7 +651,7 @@ export const handKnotted = [
   },
   {
     id: "kv-mc-390",
-    src: "/images/hand-knotted/07.jpg",
+    src: "/images/hand-knotted/07.png",
     alt: "A Silver Brown hand knotted product",
     name: "KV-MC-390",
     color: "Silver Brown",
@@ -662,7 +662,7 @@ export const handKnotted = [
   },
   {
     id: "kv-mc-405",
-    src: "/images/hand-knotted/08.jpg",
+    src: "/images/hand-knotted/08.png",
     alt: "A Ivory Brown hand knotted product",
     name: "KV-MC-405",
     color: "Ivory Brown",
@@ -673,7 +673,7 @@ export const handKnotted = [
   },
   {
     id: "kv-mc-406",
-    src: "/images/hand-knotted/09.jpg",
+    src: "/images/hand-knotted/09.png",
     alt: "A Ivory Beige/Brown hand knotted product",
     name: "KV-MC-406",
     color: "Ivory Beige/Brown",
