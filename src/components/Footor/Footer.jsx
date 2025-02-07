@@ -19,7 +19,7 @@ export default function Footer() {
 
           <div className="footer-icon" style={{ borderColor: "#FF0033" }}>
             <a
-              href="www.youtube.com/@Mahesh_Carpets"
+              href="https://www.youtube.com/@Mahesh_Carpets"
               target="_blank"
               rel="noopener noreferrer"
             >
