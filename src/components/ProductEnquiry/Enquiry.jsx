@@ -56,7 +56,7 @@ export default function Enquiry({ closeBtn, name, category }) {
         }),
       {
         loading: "Sending your enquiry...",
-        success: "Enquiry sent successfully!",
+        success: "Enquiry sent, we will reply within 24-48 hours",
         error: "Error sending enquery. Please try again.",
       }
     );

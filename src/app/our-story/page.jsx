@@ -13,14 +13,14 @@ export default function page() {
             <div className="about-para">
               <p>
                 Founded in 1976 by the visionary Late{" "}
-                <strong>Ram Kumar Maheshwari</strong> ,{" "}
+                <strong>Ram Kumar Maheshwari,</strong>{" "}
                 <strong>Mahesh Carpets</strong> has been a trailblazer in the
                 art of carpet manufacturing. Building on a legacy of excellence,
                 the second generation took the reins in 1998, with{" "}
                 <strong>Mr. Maniessh Maheshwari</strong> leading the way to
                 elevate the brand to new heights. Nestled on the serene banks of
-                the Ganges in Varanasi—a city renowned for its rich cultural
-                heritage—we bring over 50 years of expertise to every piece we
+                the Ganges in Varanasi, a city renowned for its rich cultural
+                heritage. We bring over 50 years of expertise to every piece we
                 create.
               </p>
               <br />
@@ -52,7 +52,7 @@ export default function page() {
               At Mahesh Carpets, we master the craft of carpet making by
               combining ancient traditions with modern techniques. Our portfolio
               encompasses an extensive array of handcrafted indoor rugs,
-              tailored to enhance any space—from cozy bedrooms to luxurious
+              tailored to enhance any space, from cozy bedrooms to luxurious
               living areas. With a team of skilled designers and artisans, we
               specialize in transforming your unique vision into reality.
             </p>
@@ -63,7 +63,7 @@ export default function page() {
             </p>
             <ol start="I">
               <li>I. Plush Cushions</li>
-              <li>II. Wall Arts</li>
+              <li>II. Wall Art</li>
               <li>III. Versatile Ottomans</li>
             </ol>
           </div>
@@ -98,7 +98,7 @@ export default function page() {
           <div className="certificate-section our-sty">
             <div className="benefit-heading">
               <h2>Memberships</h2>
-              <p>"Trusted Partnerships, Certified Excellence"</p>
+              <p>Trusted Partnerships, Certified Excellence</p>
             </div>
 
             <div className="certificate-desc">

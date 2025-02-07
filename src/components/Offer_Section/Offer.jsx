@@ -57,7 +57,7 @@ export default function Offer() {
               </p>
               <br />
               <p>
-                At MaheshCarpets, we are more than just manufacturers; we are innovators, artisans, and community builders—crafting carpets that make a global impact while staying rooted in our heritage.
+                At Mahesh Carpets, we are more than just manufacturers; we are innovators, artisans, and community builders—crafting carpets that make a global impact while staying rooted in our heritage.
               </p>
             </div>
 

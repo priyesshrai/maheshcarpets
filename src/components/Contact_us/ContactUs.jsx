@@ -54,7 +54,7 @@ export default function ContactUs() {
         }),
       {
         loading: "Sending message...",
-        success: "Message sent successfully!",
+        success: "We will reply within 24-48 hours",
         error: "Error sending message. Please try again.",
       }
     );
@@ -159,7 +159,7 @@ export default function ContactUs() {
                 <i className="hgi-stroke hgi-telephone" />
               </div>
               <div className="info-con">
-                <span>+91 9517292555</span>
+                <a href="tel:+919517292555"><span>+91 9517292555</span></a>
               </div>
             </div>
             <div className="info-dets">
@@ -167,7 +167,7 @@ export default function ContactUs() {
                 <i className="hgi-stroke hgi-mail-at-sign-01" />
               </div>
               <div className="info-con">
-                <span>info@maheshcarpets.com</span>
+                <a href="mailto:info@maheshcarpets.com"><span>info@maheshcarpets.com</span></a>
               </div>
             </div>
             <div className="info-dets">
@@ -175,7 +175,8 @@ export default function ContactUs() {
                 <i className="hgi-stroke hgi-location-03" />
               </div>
               <div className="info-con">
-                <span>Jagatpur GT Road Varanasi 221302 Uttar Pradesh</span>
+                <a href="https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en"><span> 90 D, JAGATPUR, G.T. ROAD VARANASI-221302, Uttar Pradesh</span></a>
+
               </div>
             </div>
           </div>
