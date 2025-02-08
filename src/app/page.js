@@ -41,14 +41,14 @@ import Loader from "@/components/Loader/Loader";
 export default function page() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
       <Collection />
       <Slider />
       <Benefits />
       <Certificates />
       <Offer />
       <Testimonials />
-      <Map/>
+      {/* <Map/> */}
     </>
   );
 }
