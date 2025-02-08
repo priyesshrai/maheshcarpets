@@ -3,13 +3,13 @@ import { Jura } from "next/font/google";
 import { Akaya_Kanadaka } from "next/font/google";
 import { Yatra_One } from "next/font/google";
 import { Raleway } from "next/font/google";
-import "./globals.css";
 const Navbar = dynamic(() => import("@/components/Navbar/Navbar"));
 const Footer = dynamic(() => import("@/components/Footor/Footer"));
 const ContactUs = dynamic(() => import("@/components/Contact_us/ContactUs"));
 import { IBM_Plex_Sans } from "next/font/google";
 import Providers from "@/components/Nprogress";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import '../../public/css/main.css'
 
 const jura = Jura({
   subsets: ["latin"],
