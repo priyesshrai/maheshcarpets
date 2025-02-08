@@ -1,10 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 :root {
   --font-jura: "Jura", sans-serif;
   --font-akaya: "Akaya Kanadaka", cursive;
   --font-raleway: "Raleway", sans-serif;
+  --font-menu: "Playfair", serif;
   --logo-font: "Yatra One", sans-serif;
   --font-ibm: "IBM Plex Sans", sans-serif;
   --dark-font: #1e1e1e;
@@ -77,7 +79,7 @@ header {
     align-items: center;
     flex-direction: column;
     /* padding: 1% 5%; */
-    font-family: var(--font-jura);
+    font-family: var(--font-menu);
 
     .logo-container {
       position: relative;
@@ -148,11 +150,12 @@ header {
         a {
           position: relative;
           color: var(--dark-font);
-          font-weight: 700;
+          font-weight: 500;
           text-transform: uppercase;
           font-size: 1.35rem;
           border-radius: 30px;
           padding: 0.3rem 1rem;
+          letter-spacing: 0.8px;
           transition: color 0.3s ease, background-color 0.3s ease;
 
           &:hover {
@@ -599,7 +602,7 @@ header {
     margin-bottom: 30px;
 
     .benefit-card {
-     width: 100%;
+      width: 100%;
       height: 11rem;
       border-radius: 10px;
       overflow: hidden;
@@ -1269,7 +1272,7 @@ footer {
         margin-right: auto;
         text-transform: uppercase;
         font-size: 3rem;
-        font-family: var(--font-raleway);
+        font-family: var(--font-jura);
         font-weight: 700;
         color: var(--light-dark-font);
       }
@@ -1501,17 +1504,16 @@ footer {
 }
 
 .certificate-wraper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   align-items: center;
   gap: 20px;
-  justify-items: center;
 }
 
 .certificate-wraper a {
   position: relative;
+  width: 100%;
   height: 100px;
-  flex: 1 0 150px;
 }
 .certificate-wraper a img {
   width: 100%;
@@ -1644,8 +1646,8 @@ footer {
       .about-heading {
         position: relative;
         width: 100%;
-        font-family: var(--font-ibm);
-        font-size: 2rem;
+        font-family: var(--font-menu);
+        font-size: 2.3rem;
         font-weight: 600;
         letter-spacing: -2px;
         color: rgb(44, 44, 44);
@@ -1676,7 +1678,7 @@ footer {
     .about-next-hed {
       position: relative;
       width: 100%;
-      font-family: var(--font-raleway);
+      font-family: var(--font-menu);
       font-size: 1.5rem;
       font-weight: 600;
     }
@@ -1726,11 +1728,13 @@ footer {
   .trade-show-img-wraper {
     position: inherit;
     width: 100%;
-    columns: 3;
-    column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    gap: 20px;
 
     div {
-      break-inside: avoid;
+      height:min-content;
       position: inherit;
       cursor: pointer;
       margin-bottom: 25px;
@@ -1742,6 +1746,7 @@ footer {
 
       img {
         width: 100%;
+        height: 265px;
         border-radius: 10px;
         object-fit: cover;
         object-position: center;
@@ -1751,9 +1756,11 @@ footer {
         width: 100%;
         position: relative;
         color: #181818;
-        font-family: var(--font-ibm);
-        font-size: 18px;
+        font-family: var(--font-menu);
+        font-weight: 500;
+        font-size: 22px;
         margin-top: 10px;
+        text-align: center;
       }
     }
   }
@@ -2221,7 +2228,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .collection-cards-container{
+  .collection-cards-container {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
   header nav .logo-wraper a svg {
@@ -2329,7 +2336,7 @@ footer {
 }
 
 @media (max-width: 390px) {
-  .benefit-section .benefit-container{
+  .benefit-section .benefit-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .hero-section .hero-heading h1 {
@@ -2518,13 +2525,12 @@ footer {
   color: var(--light-font) !important;
 }
 
-.contact-img-container{
+.contact-img-container {
   position: relative;
   width: 100%;
   margin: 10px 0;
 
-
-  img{
+  img {
     width: 100%;
     height: 500px;
     object-fit: cover;

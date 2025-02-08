@@ -49,7 +49,7 @@ export default function page() {
             <p>New Delhi - 110048</p>
 
             <span>
-              <i class="hgi-stroke hgi-flip-phone" /> +91-9918639000
+              <i className="hgi-stroke hgi-flip-phone" /> +91-9918639000
             </span>
           </div>
         </div>

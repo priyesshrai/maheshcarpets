@@ -40,9 +40,9 @@ const yatraOne = Yatra_One({
 });
 
 export const metadata = {
-  title: "Mahesh Carpets - Premium Handcrafted Carpets & Rugs",
+  title: "Mahesh Carpets - Leading Manufacturer & Exporter of fine rugs.",
   description:
-    "Discover the timeless elegance of Mahesh Carpets, where tradition meets modernity. Explore our exquisite collection of handcrafted carpets and rugs, woven with precision and passion. Elevate your living spaces with our premium, durable, and stylish designs that blend heritage craftsmanship with contemporary aesthetics. Experience luxury underfoot with Mahesh Carpets.",
+    "Step into the luxury, where comfort meets style, one weave at a time.",
 };
 import { ReactLenis } from "lenis/react";
 export default function RootLayout({ children }) {
@@ -54,18 +54,19 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
         />
+        <meta name="google-site-verification" content="G2XKjAWAeAOJgLFfUkfX9gTQYENs4xPsZxr-1h6g5Kc" />
       </head>
       <body
         className={`${jura.variable} ${akayaKanadaka.variable} ${raleway.variable} ${yatraOne.variable} ${ibmPlexSans.variable}`}
       >
-        <ReactLenis root>
+        {/* <ReactLenis root> */}
           <main className="main">
             <Navbar />
             <Providers>{children}</Providers>
             <ContactUs />
             <Footer />
           </main>
-        </ReactLenis>
+        {/* </ReactLenis> */}
         <GoogleAnalytics gaId="G-X87N2F0D8F" />
       </body>
     </html>

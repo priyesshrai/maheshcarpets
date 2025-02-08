@@ -19,7 +19,7 @@ export default function Footer() {
 
           <div className="footer-icon" style={{ borderColor: "#FF0033" }}>
             <a
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/@Mahesh_Carpets"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,7 +86,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="/our-story">About Us</Link>
+                  <Link href="/our-story">Our Story</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
@@ -94,12 +94,16 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
+                  <Link href="/compliance">Compliance</Link>
+                </li>
+                {/* <li>
+                  <i className="hgi-stroke hgi-link-forward" />
                   <Link href="/">Privacy & Policy</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
                   <Link href="/">Terms & Conditions</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -160,7 +164,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-location-03" />
-                  <span>Jagatpur GT Road Varanasi 221302 Uttar Pradesh</span>
+                  <span>90 D, JAGATPUR, G.T. ROAD VARANASI-221302 Uttar Pradesh</span>
                 </li>
               </ul>
             </div>
@@ -170,7 +174,7 @@ export default function Footer() {
       <div className="base-footer">
         <span>
           Copyright &copy; {new Date().getFullYear()} Mahesh Carpets | All
-          rights reserved | Develop & Maintain by{" "}
+          rights reserved | Developed & Maintained by{" "}
           <a href="https://wizards.co.in/" target="_blank">
             Wizards Next
           </a>

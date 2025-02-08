@@ -35,15 +35,15 @@ export default function Testimonials() {
 
 const testimonials = [
   {
-    name: "Indian Carpet Expo Badhoi",
+    name: "Indian Carpet Expo, Badhoi",
     src: "/images/fair/fair_badhoi.jpg",
   },
   {
-    name: "Indian Carpet Expo New Delhi",
+    name: "Indian Carpet Expo, New Delhi",
     src: "/images/fair/fair_delhi.JPG",
   },
   {
-    name: "DOMOTEX Germany-Hannover",
+    name: "DOMOTEX Germany, Hannover",
     src: "/images/fair/fair_domotex.jpg",
   },
 ];

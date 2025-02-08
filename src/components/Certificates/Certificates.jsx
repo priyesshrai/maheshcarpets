@@ -7,7 +7,7 @@ export default function Certificates() {
       <div className="certificate-section">
         <div className="benefit-heading">
           <h2>Our Certificate</h2>
-          <p>"Certified Excellence: Quality with a Conscience"</p>
+          <p>Certified Excellence: Quality with a Conscience</p>
         </div>
 
         <div className="certificate-desc">
@@ -72,6 +72,14 @@ export default function Certificates() {
             <a href="https://www.sedex.com/" target="_blank">
               <Image
                 src="/images/certificates/Sedex.jpg"
+                width={200}
+                height={200}
+                alt="certificate1"
+              />
+            </a>
+            <a href="https://www.oeko-tex.com/en/" target="_blank">
+              <Image
+                src="/images/certificates/OEKO-TEX.png"
                 width={200}
                 height={200}
                 alt="certificate1"
