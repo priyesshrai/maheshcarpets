@@ -54,18 +54,21 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
         />
-        <meta name="google-site-verification" content="G2XKjAWAeAOJgLFfUkfX9gTQYENs4xPsZxr-1h6g5Kc" />
+        <meta
+          name="google-site-verification"
+          content="G2XKjAWAeAOJgLFfUkfX9gTQYENs4xPsZxr-1h6g5Kc"
+        />
       </head>
       <body
         className={`${jura.variable} ${akayaKanadaka.variable} ${raleway.variable} ${yatraOne.variable} ${ibmPlexSans.variable}`}
       >
         {/* <ReactLenis root> */}
-          <main className="main">
-            <Navbar />
-            <Providers>{children}</Providers>
-            <ContactUs />
-            <Footer />
-          </main>
+        <main className="main">
+          <Navbar />
+          <Providers>{children}</Providers>
+          <ContactUs />
+          <Footer />
+        </main>
         {/* </ReactLenis> */}
         <GoogleAnalytics gaId="G-X87N2F0D8F" />
       </body>

@@ -35,7 +35,7 @@ export default function page() {
             <p>Uttar Pradesh - 221401</p>
 
             <span>
-              <i class="hgi-stroke hgi-flip-phone" /> +91-9415201178
+              <i className="hgi-stroke hgi-flip-phone" /> +91-9415201178
             </span>
           </div>
         </div>
