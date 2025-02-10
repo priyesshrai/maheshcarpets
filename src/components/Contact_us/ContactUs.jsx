@@ -166,8 +166,8 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="info-dets">
-              <div className="info-icon" style={{borderColor:"#ff5722"}}>
-                <i className="hgi-stroke hgi-mail-at-sign-01"  style={{ color: "#ff5722" }} />
+              <div className="info-icon" style={{borderColor:"#C5221F"}}>
+                <i className="hgi-stroke hgi-mail-at-sign-01"  style={{ color: "#C5221F" }} />
               </div>
               <div className="info-con">
                 <a href="mailto:info@maheshcarpets.com"><span>info@maheshcarpets.com</span></a>
