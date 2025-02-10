@@ -157,7 +157,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <i className="hgi-stroke hgi-mail-at-sign-01" style={{ color: "#ff5722" }}/>
+                  <i className="hgi-stroke hgi-mail-at-sign-01" style={{ color: "#C5221F" }}/>
                   <Link href="mailto:info@maheshcarpets.com">
                     <span>info@maheshcarpets.com</span>
                   </Link>
