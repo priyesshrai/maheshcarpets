@@ -48,7 +48,7 @@ export default function page() {
       <Certificates />
       <Offer />
       <Testimonials />
-      <Map/>
+      {/* <Map/> */}
     </>
   );
 }
