@@ -58,7 +58,7 @@ export default function Footer() {
               <Image
                 src="/images/logo/logo-01.jpeg"
                 alt="logo"
-                width={180}
+                width={280}
                 height={80}
               />
             </div>
@@ -94,7 +94,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="/compliance">Compliance</Link>
+                  <Link href="#compliance">Compliance</Link>
                 </li>
                 {/* <li>
                   <i className="hgi-stroke hgi-link-forward" />
@@ -151,20 +151,22 @@ export default function Footer() {
             <div className="footer-links">
               <ul>
                 <li>
-                  <i className="hgi-stroke hgi-telephone" />
+                  <i className="hgi-stroke hgi-telephone" style={{ color: "#28a745" }}/>
                   <Link href="/">
                     <span>+91 9517292555</span>
                   </Link>
                 </li>
                 <li>
-                  <i className="hgi-stroke hgi-mail-at-sign-01" />
+                  <i className="hgi-stroke hgi-mail-at-sign-01" style={{ color: "#ff5722" }}/>
                   <Link href="mailto:info@maheshcarpets.com">
                     <span>info@maheshcarpets.com</span>
                   </Link>
                 </li>
                 <li>
-                  <i className="hgi-stroke hgi-location-03" />
-                  <span>90 D, JAGATPUR, G.T. ROAD VARANASI-221302 Uttar Pradesh</span>
+                  <i className="hgi-stroke hgi-location-03" style={{ color: "#007bff" }}/>
+                  <Link className="lst" href='https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en'>
+                    <span>90 D, JAGATPUR, G.T. ROAD VARANASI-221302 Uttar Pradesh</span>
+                  </Link>
                 </li>
               </ul>
             </div>

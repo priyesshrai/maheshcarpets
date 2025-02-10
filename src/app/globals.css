@@ -770,7 +770,7 @@ header {
 }
 
 .contact-form {
-  width: 72%;
+  width: 65%;
 }
 
 .form-row {
@@ -888,18 +888,19 @@ header {
   transform: translateY(-50%);
   background-color: var(--dark-font);
   padding: 20px;
-  width: 23%;
+  width: 30%;
   border-radius: 20px 0 0 20px;
   color: var(--light-font);
+  font-family: var(--font-menu);
 
   .info-heading {
     width: 100%;
     position: relative;
-    font-family: var(--font-jura);
+    font-family: var(--font-menu);
 
     h4 {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 28px;
+      font-weight: 500;
     }
   }
 
@@ -910,6 +911,7 @@ header {
     gap: 15px;
     align-items: center;
     margin-top: 20px;
+    transition: transform 0.3s linear;
 
     .info-icon {
       flex: 0 0 40px;
@@ -921,10 +923,15 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
     .info-con {
       position: relative;
-      width: 170px;
+    }
+
+    &:hover{
+      transform: translateY(-5px);
+      cursor: pointer;
     }
   }
 }
@@ -956,12 +963,16 @@ footer {
       position: relative;
       width: 100%;
       height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .footer-logo {
         position: relative;
         width: 100%;
         display: flex;
         align-items: center;
+        /* justify-content: center; */
       }
 
       .footer-description {
@@ -984,14 +995,19 @@ footer {
 
     .footer-icon {
       position: relative;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       border: 1px solid var(--light-font);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
+      transition: transform 0.3s linear;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
     }
   }
 
@@ -1009,13 +1025,13 @@ footer {
         width: 100%;
         position: relative;
         font-size: 28px;
-        font-family: var(--font-jura);
+        font-family: var(--font-menu);
       }
 
       .footer-links {
         width: 100%;
         position: relative;
-        font-family: var(--font-raleway);
+        font-family: var(--font-menu);
         font-size: 18px;
         margin-top: 30px;
         text-align: left;
@@ -1031,6 +1047,10 @@ footer {
             width: 100%;
             align-items: center;
 
+            i {
+              font-size: 22px;
+            }
+
             a {
               position: relative;
               display: inline-block;
@@ -1045,7 +1065,6 @@ footer {
                 right: 0;
                 transition: width 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
               }
-
               &:hover::after {
                 width: 100%;
                 left: 0;
@@ -1053,6 +1072,9 @@ footer {
               &:hover {
                 color: #c5c5c5;
               }
+            }
+            .lst::after{
+              display: none;
             }
           }
         }
@@ -1679,7 +1701,7 @@ footer {
       position: relative;
       width: 100%;
       font-family: var(--font-menu);
-      font-size: 1.5rem;
+      font-size: 2.3rem;
       font-weight: 600;
     }
     .about-para {
@@ -1734,7 +1756,7 @@ footer {
     gap: 20px;
 
     div {
-      height:min-content;
+      height: min-content;
       position: inherit;
       cursor: pointer;
       margin-bottom: 25px;
@@ -1839,9 +1861,9 @@ footer {
   .footer-container .first-container {
     flex: 1 0 280px;
   }
-  .footer-logo img {
+  /* .footer-logo img {
     width: 135px;
-  }
+  } */
   /* .menu-btn-container {
     display: block;
   } */
@@ -1982,6 +2004,16 @@ footer {
 }
 
 @media (max-width: 882px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-info-container {
+    width: 100%;
+    position: relative;
+    transform: translateY(0);
+    margin-top: 20px;
+    border-radius: 20px;
+  }
   .hero-section .hero-heading h1 {
     font-size: 2.5rem;
   }
@@ -1990,15 +2022,6 @@ footer {
   }
   .offer-section .benefit-heading h2 {
     font-size: 2.5rem;
-  }
-  .offer-container {
-    gap: 30px;
-  }
-  .offer-container .offer-image-section {
-    flex: 0 0 360px;
-  }
-  .offer-container .offer-details-section {
-    flex: 0 0 calc(100% - 390px);
   }
   .hero-section {
     padding: 215px 0 !important;
@@ -2284,16 +2307,7 @@ footer {
   .contact-us-section {
     margin-top: 40px;
   }
-  .contact-form {
-    width: 100%;
-  }
-  .contact-info-container {
-    width: 100%;
-    position: relative;
-    transform: translateY(0);
-    margin-top: 20px;
-    border-radius: 20px;
-  }
+
   .product-section .product-desc .product-title {
     font-size: 25px;
   }

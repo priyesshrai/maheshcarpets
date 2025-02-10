@@ -77,7 +77,7 @@ export default function ContactUs() {
                 <input
                   type="text"
                   id="name"
-                  placeholder="Your name"
+                  placeholder="Your Name"
                   className="form-input"
                   value={data.name}
                   onChange={handleChange}
@@ -91,7 +91,7 @@ export default function ContactUs() {
                 <input
                   type="email"
                   id="email"
-                  placeholder="Your email"
+                  placeholder="Your Email"
                   className="form-input"
                   value={data.email}
                   onChange={handleChange}
@@ -107,7 +107,7 @@ export default function ContactUs() {
                 <input
                   type="tel"
                   id="contactNo"
-                  placeholder="Your phone number"
+                  placeholder="Your Phone Number"
                   className="form-input"
                   value={data.contactNo}
                   onChange={handleChange}
@@ -136,7 +136,7 @@ export default function ContactUs() {
                 </label>
                 <textarea
                   id="message"
-                  placeholder="Describe your Enquiry..."
+                  placeholder="Describe your Enquiry.....!"
                   rows="4"
                   className="form-textarea"
                   value={data.message}
@@ -145,6 +145,9 @@ export default function ContactUs() {
                 ></textarea>
               </div>
             </div>
+
+            <strong style={{display:"block", fontSize:"10px", marginBottom:"8px", textAlign:"center"}}>We will reply within 24-48 hours</strong>
+
             <button type="submit" className="submit-button">
               {loading ? <FormLoader /> : "Submit"}
             </button>
@@ -155,24 +158,24 @@ export default function ContactUs() {
               <h4>Contact Info</h4>
             </div>
             <div className="info-dets" style={{ marginTop: "30px" }}>
-              <div className="info-icon">
-                <i className="hgi-stroke hgi-telephone" />
+              <div className="info-icon" style={{borderColor:"#28a745"}}>
+                <i className="hgi-stroke hgi-telephone" style={{ color: "#28a745" }}/>
               </div>
               <div className="info-con">
                 <a href="tel:+919517292555"><span>+91 9517292555</span></a>
               </div>
             </div>
             <div className="info-dets">
-              <div className="info-icon">
-                <i className="hgi-stroke hgi-mail-at-sign-01" />
+              <div className="info-icon" style={{borderColor:"#ff5722"}}>
+                <i className="hgi-stroke hgi-mail-at-sign-01"  style={{ color: "#ff5722" }} />
               </div>
               <div className="info-con">
                 <a href="mailto:info@maheshcarpets.com"><span>info@maheshcarpets.com</span></a>
               </div>
             </div>
             <div className="info-dets">
-              <div className="info-icon">
-                <i className="hgi-stroke hgi-location-03" />
+              <div className="info-icon" style={{borderColor:"#007bff"}}>
+                <i className="hgi-stroke hgi-location-03" style={{ color: "#007bff" }} />
               </div>
               <div className="info-con">
                 <a href="https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en"><span> 90 D, JAGATPUR, G.T. ROAD VARANASI-221302, Uttar Pradesh</span></a>
