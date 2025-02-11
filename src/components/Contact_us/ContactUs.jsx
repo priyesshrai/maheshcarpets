@@ -146,7 +146,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <strong style={{display:"block", fontSize:"10px", marginBottom:"8px", textAlign:"center"}}>We will reply within 24-48 hours</strong>
+            <span style={{display:"block", fontSize:"12px", marginBottom:"8px", textAlign:"center"}}>We will reply within 24-48 hours</span>
 
             <button type="submit" className="submit-button">
               {loading ? <FormLoader /> : "Submit"}

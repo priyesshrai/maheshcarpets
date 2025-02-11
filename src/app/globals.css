@@ -1045,7 +1045,7 @@ footer {
             display: flex;
             gap: 10px;
             width: 100%;
-            align-items: center;
+            /* align-items: center; */
 
             i {
               font-size: 22px;

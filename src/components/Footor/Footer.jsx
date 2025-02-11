@@ -55,12 +55,14 @@ export default function Footer() {
         <div className="first-container">
           <div className="footer-container-wraper">
             <div className="footer-logo">
+              <Link href='/'>
               <Image
                 src="/images/logo/logo-01.jpeg"
                 alt="logo"
                 width={280}
                 height={80}
               />
+              </Link>
             </div>
             {/* <div className="footer-description">
               <h2>MAHESH CARPETs</h2>
