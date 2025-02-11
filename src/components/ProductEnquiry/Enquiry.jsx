@@ -6,8 +6,8 @@ import toast, { Toaster } from "react-hot-toast";
 
 export default function Enquiry({ closeBtn, name, category }) {
   const [data, setData] = useState({
-    productName:name,
-    category:category,
+    productName: name,
+    category: category,
     name: "",
     contact: "",
     email: "",
@@ -73,7 +73,19 @@ export default function Enquiry({ closeBtn, name, category }) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [closeBtn]);
-  
+
+  useEffect(() => {
+    if (closeBtn) {
+      document.body.style.overflow = 'hidden'
+    }
+    else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [closeBtn])
+
   return (
     <section className="enquiry-section">
       <div className="enquiry-wrapper">
