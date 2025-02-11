@@ -103,7 +103,7 @@ export default function Product({ productId }) {
                                         <span>Category:</span> {data?.category}
                                     </p>
                                     <p>
-                                        <span>Color: </span>
+                                        <span>Colour: </span>
                                         {data?.color}
                                     </p>
                                     <p>

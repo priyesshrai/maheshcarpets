@@ -72,7 +72,7 @@ export default function Data() {
                     </div>
                     <div className="product-details">
                       <div className="product-color">
-                        <span>Color : </span>
+                        <span>Colour : </span>
                         <span>{data.color}</span>
                       </div>
                       <div
