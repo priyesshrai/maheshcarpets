@@ -1672,7 +1672,7 @@ footer {
         font-size: 2.3rem;
         font-weight: 600;
         letter-spacing: -2px;
-        color: rgb(44, 44, 44);
+        /* color: rgb(44, 44, 44); */
         line-height: 1;
         margin-bottom: 18px;
       }
