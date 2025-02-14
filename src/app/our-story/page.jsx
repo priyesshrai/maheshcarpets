@@ -39,7 +39,7 @@ export default function page() {
             </div>
           </div>
           <div className="about-image">
-            <img src="/images/our-story.jpg" alt="" />
+            <img src="/images/our-story.jpg" alt="Mahesh Carpets" />
           </div>
         </div>
 
@@ -149,4 +149,9 @@ export default function page() {
       </div>
     </section>
   );
+}
+
+export const metadata = {
+  title: 'About Mahesh Carpets | Legacy of Fine Carpet Weaving',
+  description: 'Discover the story behind Mahesh Carpets—crafting exquisite handmade rugs with tradition, innovation, and craftsmanship for generations.',
 }

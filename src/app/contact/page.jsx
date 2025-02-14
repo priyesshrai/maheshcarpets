@@ -12,7 +12,7 @@ export default function page() {
         <div className="section-wraper-box">
           <div className="location-container">
             <div className="location-heading">
-              <h5><strong>Varanasi Office (Headquaters)</strong></h5>
+              <h1><strong>Varanasi Office (Headquaters)</strong></h1>
             </div>
             <p>Araji No 142, G.T. Road, Jagatpur
               Varanasi.
@@ -57,4 +57,10 @@ export default function page() {
       </div>
     </section>
   )
+}
+
+
+export const metadata = {
+  title: 'Contact Mahesh Carpets | Get in Touch for Custom Rugs',
+  description: 'Have questions or need a custom carpet? Contact Mahesh Carpets today for inquiries, orders, or expert assistance. We\'re here to help!',
 }

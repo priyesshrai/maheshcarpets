@@ -13,7 +13,7 @@ const useFetchShaped = (productId, productCategory) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const filteredData = shaped.find((item) => item.id === productId);
+        const filteredData = shaped.find((item) => item.uri === productId);
 
         if (filteredData) {
           setData(filteredData);

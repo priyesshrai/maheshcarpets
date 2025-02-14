@@ -12,11 +12,11 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Loader from "@/components/Loader/Loader";
-const Enquiry = dynamic(()=>import("@/components/ProductEnquiry/Enquiry"),{loading:()=><Loader/>});
+const Enquiry = dynamic(() => import("@/components/ProductEnquiry/Enquiry"), { loading: () => <Loader /> });
 import dynamic from "next/dynamic";
 import Fancybox from "@/components/ImageZoom/Fancybox";
 
-export default function Product({ productId }) {
+export default function Product({ productName }) {
   const pathname = usePathname();
   const router = useRouter();
   const [productCategory, setProductCategory] = useState(null);
@@ -26,6 +26,8 @@ export default function Product({ productId }) {
     router.back();
   };
 
+  // console.log(productName, productCategory);
+
   useEffect(() => {
     const pathSegments = pathname.split("/").filter(Boolean);
     if (pathSegments.length >= 3) {
@@ -33,7 +35,9 @@ export default function Product({ productId }) {
     }
   }, [pathname]);
 
-  const { data, loading, error } = useFetch(productId, productCategory);
+  const { data, loading, error } = useFetch(productName, productCategory);
+  // console.log(data);
+
 
   return (
     <section className="section">
@@ -52,12 +56,12 @@ export default function Product({ productId }) {
           <Loader />
         ) : (
           <div className="product-body">
-            
+
             <div className="product-name">
-            <div className="back-btn" onClick={handleBackClick}>
+              <div className="back-btn" onClick={handleBackClick}>
                 <i className="hgi-stroke hgi-arrow-left-01" />
               </div>
-              <h1>{data.color} {data.category} carpet</h1>
+              <h1>{data?.color} {data?.category} carpet</h1>
             </div>
 
             <div className="product-wraper">
@@ -68,7 +72,7 @@ export default function Product({ productId }) {
                       <div className="p-0">
                         <Card>
                           <CardContent className="flex aspect-square items-center justify-center p-0">
-                          <Fancybox>
+                            <Fancybox>
                               <div data-fancybox="gallery" href={data?.src}>
                                 <Image
                                   src={data?.src}
@@ -90,26 +94,20 @@ export default function Product({ productId }) {
               </div>
               <div className="single-product-details">
                 <div className="product-title">
-                  <h1>{data.name}</h1>
+                  <h1>{data?.name}</h1>
                 </div>
                 <div className="product-description">
-                  {/* <p>
-                    <span>Product ID:</span> {data.id}
-                  </p> */}
                   <p>
-                    <span>Category:</span> {data.category}
+                    <span>Category:</span> {data?.category}
                   </p>
                   <p>
                     <span>Colour: </span>
-                    {data.color}
+                    {data?.color}
                   </p>
                   <p>
-                    <span>Collection:</span> {data.collection}
+                    <span>Collection:</span> {data?.collection}
                   </p>
-                  {/* <p>
-                    <span>Material:</span> {data.material}
-                  </p> */}
-                  <h2 dangerouslySetInnerHTML={{ __html: data.material.replaceAll("&", "<br/>") }}></h2>
+                  <h2 dangerouslySetInnerHTML={{ __html: data?.material.replaceAll("&", "<br/>") }}></h2>
                 </div>
                 <div className="product-cta">
                   <button className="btn" onClick={() => setEnquiryForm(true)}>
@@ -121,7 +119,7 @@ export default function Product({ productId }) {
           </div>
         )}
       </div>
-      {enquiryForm && <Enquiry closeBtn={setEnquiryForm} category={data.category} name={data.name}/>}
+      {enquiryForm && <Enquiry closeBtn={setEnquiryForm} category={data?.category} name={data?.name} />}
     </section>
   );
 }

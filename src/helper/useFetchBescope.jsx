@@ -13,7 +13,7 @@ const useFetchBescope = (productId, productCategory) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const filteredData = bespoke.find((item) => item.id === productId);
+        const filteredData = bespoke.find((item) => item.uri === productId);
 
         if (filteredData) {
           setData(filteredData);

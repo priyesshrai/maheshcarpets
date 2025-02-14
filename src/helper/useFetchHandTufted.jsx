@@ -13,7 +13,7 @@ const useFetchHandTufted = (productId, productCategory) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const filteredData = handTufted.find((item) => item.id === productId);
+        const filteredData = handTufted.find((item) => item.uri === productId);
 
         if (filteredData) {
           setData(filteredData);

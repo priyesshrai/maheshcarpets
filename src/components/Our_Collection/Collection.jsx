@@ -7,7 +7,7 @@ export default function Collection() {
     <section className="section" style={{ backgroundColor: "#fff" }}>
       <div className="collection-section">
         <div className="collection-heading">
-          <h2>Step into the luxury, where comfort meets style, one weave at a time </h2>
+          <h1>Step into the luxury, where comfort meets style, one weave at a time </h1>
         </div>
         <div className="collection-sub-heading">
           <p style={{ fontSize: "1.2vw", color: "#1e1e1e" }}>

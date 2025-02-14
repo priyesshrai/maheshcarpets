@@ -2,19 +2,19 @@
 import { useState, useEffect } from "react";
 import { handloomData } from "@/data/productdata";
 
-const useFetch = (productId, productCategory) => {
+const useFetch = (productName, productCategory) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!productId || !productCategory) return;
+    if (!productName || !productCategory) return;
 
     const fetchData = async () => {
       try {
         setLoading(true);
         const filteredData = handloomData.find(
-          (item) => item.id === productId && item.category === productCategory
+          (item) => item.uri === productName && item.category === productCategory
         );
 
         if (filteredData) {
@@ -30,7 +30,7 @@ const useFetch = (productId, productCategory) => {
     };
 
     fetchData();
-  }, [productId, productCategory]);
+  }, [productName, productCategory]);
 
   return { data, loading, error };
 };
