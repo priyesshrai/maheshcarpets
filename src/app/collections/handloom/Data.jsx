@@ -26,7 +26,7 @@ export default function Data() {
   const handleBackClick = () => {
     router.back();
   };
-
+  
   return (
     <section className="section">
       <div className="product-section">
@@ -67,7 +67,7 @@ export default function Data() {
         ) : (
           <div className="product-body">
             <div className="product-wraper">
-              {data.map((data) => (
+              {data?.map((data) => (
                 <Link href={`${data.category}/${data.uri}`} key={data.id}>
                   <div className="product-card">
                     <div className="product-img">

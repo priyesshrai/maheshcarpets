@@ -40,9 +40,9 @@ const yatraOne = Yatra_One({
 });
 
 export const metadata = {
-  title: "Mahesh Carpets - Leading Manufacturer & Exporter of fine rugs.",
+  title: "Mahesh Carpets – Luxury Handcrafted Carpets & Rugs",
   description:
-    "Step into the luxury, where comfort meets style, one weave at a time.",
+    "Explore premium handcrafted carpets and rugs at Mahesh Carpets. From hand-knotted to bespoke designs, find the perfect piece to elevate your space.",
 };
 import { ReactLenis } from "lenis/react";
 export default function RootLayout({ children }) {

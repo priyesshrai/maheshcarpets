@@ -13,7 +13,7 @@ const useFetchFlatWeave = (productId, productCategory) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const filteredData = flatWeave.find((item) => item.id === productId);
+        const filteredData = flatWeave.find((item) => item.uri === productId);
 
         if (filteredData) {
           setData(filteredData);
