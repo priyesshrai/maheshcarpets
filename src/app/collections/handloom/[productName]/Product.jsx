@@ -61,7 +61,7 @@ export default function Product({ productName }) {
               <div className="back-btn" onClick={handleBackClick}>
                 <i className="hgi-stroke hgi-arrow-left-01" />
               </div>
-              <h1>{data?.color} {data?.category} carpet</h1>
+              <h1>{`${data?.color} ${data?.category} carpet`}</h1>
             </div>
 
             <div className="product-wraper">
