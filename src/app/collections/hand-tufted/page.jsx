@@ -1,9 +1,10 @@
 import React from 'react'
 import Data from './Data'
+import { handTufted } from "@/data/productdata.js";
 
 export default function page() {
   return (
-    <Data />
+    <Data data={handTufted} />
   )
 }
 export const metadata = {

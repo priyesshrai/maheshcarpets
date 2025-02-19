@@ -1,9 +1,10 @@
 import React from 'react'
 import Data from './Data'
+import { handKnotted } from "@/data/productdata.js";
 
 export default function page() {
   return (
-    <Data />
+    <Data data={handKnotted} />
   )
 }
 export const metadata = {

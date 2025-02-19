@@ -1,9 +1,10 @@
 import React from 'react'
 import Data from './Data'
+import { shaped } from "@/data/productdata.js";
 
 export default function page() {
   return (
-    <Data />
+    <Data data={shaped} />
   )
 }
 export const metadata = {
