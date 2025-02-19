@@ -1,45 +1,12 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { handloomData } from "@/data/productdata.js";
 import Loader from "@/components/Loader/Loader";
 
-export default function Data() {
-  const pathname = usePathname();
-  const router = useRouter();
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(null);
+export default function Data({ data }) {
 
-  useEffect(() => {
-    try {
-      setLoading(true);
-      setData(handloomData);
-      setLoading(false);
-    } catch (error) {
-      console.error(error);
-      setLoading(false);
-    }
-  }, []);
-
-  const handleBackClick = () => {
-    router.back();
-  };
-  
   return (
     <section className="section">
       <div className="product-section">
-        {/* <div className="product-top-level">
-          <div className="back-btn" onClick={handleBackClick}>
-            <i className="hgi-stroke hgi-arrow-left-01" />
-          </div>
-          <div className="current-path">
-            <p>
-              <i className="hgi-stroke hgi-home-04" /> {pathname}
-            </p>
-          </div>
-        </div> */}
 
         <div className="product-desc">
           <div className="pro-details-container">
@@ -62,7 +29,7 @@ export default function Data() {
           </div>
         </div>
 
-        {loading ? (
+        {!data ? (
           <Loader />
         ) : (
           <div className="product-body">
