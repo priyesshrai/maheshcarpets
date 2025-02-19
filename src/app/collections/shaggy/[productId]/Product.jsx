@@ -89,7 +89,7 @@ export default function Product({ productId }) {
               </div>
               <div className="single-product-details">
                 <div className="product-title">
-                  <h1>{data?.name}</h1>
+                  <span>{data?.name}</span>
                 </div>
                 <div className="product-description">
                   <p>
