@@ -100,6 +100,14 @@ export default function Navbar() {
           )}
           <li className="nav-links">
             <Link
+              href="/blogs"
+              className={`${pathname.startsWith("/blogs") ? "active-link" : ""} ${pathname === '/' && 'chCol'}`}
+            >
+              Blogs
+            </Link>
+          </li>
+          <li className="nav-links">
+            <Link
               href="/contact"
               className={`${pathname.startsWith("/contact") ? "active-link" : ""} ${pathname === '/' && 'chCol'}`}
             >
@@ -188,6 +196,15 @@ export default function Navbar() {
               </li>
             )}
 
+            <li className="nav-links">
+              <Link
+                href="/blogs"
+                className={pathname.startsWith("/blogs") ? "active-link" : ""}
+              >
+                <i className="hgi-stroke hgi-license-draft" />
+              </Link>
+              <span>Blogs</span>
+            </li>
             <li className="nav-links">
               <Link
                 href="/contact"
