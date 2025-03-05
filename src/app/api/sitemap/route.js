@@ -1,13 +1,36 @@
 import { NextResponse } from "next/server";
-import { handloomData, bespoke, flatWeave, handKnotted, handTufted, shaggy, shaped } from "@/data/productdata";
+import {
+  handloomData,
+  bespoke,
+  flatWeave,
+  handKnotted,
+  handTufted,
+  shaggy,
+  shaped,
+} from "@/data/productdata";
 
 const BASE_URL = "https://www.maheshcarpets.com/";
 
 export async function GET() {
-  const allProducts = [...handloomData, ...handTufted, ...bespoke, ...flatWeave, ...handKnotted, ...shaggy, ...shaped];
+  const allProducts = [
+    ...handloomData,
+    ...handTufted,
+    ...bespoke,
+    ...flatWeave,
+    ...handKnotted,
+    ...shaggy,
+    ...shaped,
+  ];
 
   // Static pages (add more if needed)
-  const staticPages = ["", "our-story", "contact"];
+  const staticPages = [
+    "",
+    "our-story",
+    "contact",
+    "blogs",
+    "blogs/how-to-identify-a-genuine-handmade-carpet",
+    "blogs/how-to-clean-carpets-without-professional-help",
+  ];
 
   // Generate URLs for sitemap
   const urls = [
