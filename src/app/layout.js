@@ -45,6 +45,7 @@ export const metadata = {
     "Explore premium handcrafted carpets and rugs at Mahesh Carpets. From hand-knotted to bespoke designs, find the perfect piece to elevate your space.",
 };
 import { ReactLenis } from "lenis/react";
+import LocalBusinessSchema from "@/components/LocalBusiness/LocalBusinessSchema";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="G2XKjAWAeAOJgLFfUkfX9gTQYENs4xPsZxr-1h6g5Kc"
         />
+        <LocalBusinessSchema />
       </head>
       <body
         className={`${jura.variable} ${akayaKanadaka.variable} ${raleway.variable} ${yatraOne.variable} ${ibmPlexSans.variable}`}
