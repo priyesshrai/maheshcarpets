@@ -166,8 +166,8 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-location-03" style={{ color: "#007bff" }}/>
-                  <Link className="lst" href='https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en'>
-                    <span>90 D, JAGATPUR, G.T. ROAD VARANASI-221302 Uttar Pradesh</span>
+                  <Link className="lst" href='https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en' target="_blank">
+                    <span>Araji No. 90D GT Road JAGATPUR, VARANASI-221302 Uttar Pradesh</span>
                   </Link>
                 </li>
               </ul>

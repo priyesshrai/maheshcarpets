@@ -146,7 +146,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <span style={{display:"block", fontSize:"12px", marginBottom:"8px", textAlign:"center"}}>We will reply within 24-48 hours</span>
+            <span style={{ display: "block", fontSize: "12px", marginBottom: "8px", textAlign: "center" }}>We will reply within 24-48 hours</span>
 
             <button type="submit" className="submit-button">
               {loading ? <FormLoader /> : "Submit"}
@@ -158,28 +158,29 @@ export default function ContactUs() {
               <h4>Contact Info</h4>
             </div>
             <div className="info-dets" style={{ marginTop: "30px" }}>
-              <div className="info-icon" style={{borderColor:"#28a745"}}>
-                <i className="hgi-stroke hgi-telephone" style={{ color: "#28a745" }}/>
+              <div className="info-icon" style={{ borderColor: "#28a745" }}>
+                <i className="hgi-stroke hgi-telephone" style={{ color: "#28a745" }} />
               </div>
               <div className="info-con">
                 <a href="tel:+919517292555"><span>+91 9517292555</span></a>
               </div>
             </div>
             <div className="info-dets">
-              <div className="info-icon" style={{borderColor:"#C5221F"}}>
-                <i className="hgi-stroke hgi-mail-at-sign-01"  style={{ color: "#C5221F" }} />
+              <div className="info-icon" style={{ borderColor: "#C5221F" }}>
+                <i className="hgi-stroke hgi-mail-at-sign-01" style={{ color: "#C5221F" }} />
               </div>
               <div className="info-con">
-                <a href="mailto:info@maheshcarpets.com"><span>info@maheshcarpets.com</span></a>
+                <a href="mailto:sales@maheshcarpets.com"><span>sales@maheshcarpets.com</span></a>
               </div>
             </div>
             <div className="info-dets">
-              <div className="info-icon" style={{borderColor:"#007bff"}}>
+              <div className="info-icon" style={{ borderColor: "#007bff" }}>
                 <i className="hgi-stroke hgi-location-03" style={{ color: "#007bff" }} />
               </div>
               <div className="info-con">
-                <a href="https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en"><span> 90 D, JAGATPUR, G.T. ROAD VARANASI-221302, Uttar Pradesh</span></a>
-
+                <a href="https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en" target="_blank">
+                  <span>Araji No. 90D GT Road JAGATPUR, VARANASI-221302 Uttar Pradesh</span>
+                </a>
               </div>
             </div>
           </div>

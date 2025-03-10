@@ -14,8 +14,7 @@ export default function page() {
             <div className="location-heading">
               <h1><strong>Varanasi Office (Headquaters)</strong></h1>
             </div>
-            <p>Araji No 142, G.T. Road, Jagatpur
-              Varanasi.
+            <p>Araji No. 90D GT Road JAGATPUR, VARANASI
             </p>
             <p>Uttar Pradesh - 221302</p>
 

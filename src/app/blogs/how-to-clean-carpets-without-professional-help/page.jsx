@@ -26,7 +26,7 @@ export default function page() {
                     </p>
                     <br />
                     <span>Also Read: </span>
-                    <Link href='/blog/how-to-identify-a-genuine-handmade-carpet' >
+                    <Link href='/blogs/how-to-identify-a-genuine-handmade-carpet' >
                         How to Identify a Genuine Handmade Carpet.
                     </Link>
 
