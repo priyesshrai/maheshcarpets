@@ -1,3 +1,6 @@
+import ContactUs from '@/components/Contact_us/ContactUs'
+import Footer from '@/components/Footor/Footer'
+import Navbar from '@/components/Navbar/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -5,6 +8,7 @@ import React from 'react'
 export default function page() {
     return (
         <>
+            <Navbar />
             <section className='blog-header'>
                 <div className="blog-header-container">
                     <h1>Blogs</h1>
@@ -104,6 +108,8 @@ export default function page() {
                     </div>
                 </div>
             </section>
+            <ContactUs />
+            <Footer />
         </>
     )
 }

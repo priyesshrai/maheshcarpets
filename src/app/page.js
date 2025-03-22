@@ -37,10 +37,14 @@ const Map = dynamic(() => import("@/components/Map/Map"), {
   loading: () => <Loader />,
 });
 import Loader from "@/components/Loader/Loader";
+import Navbar from "@/components/Navbar/Navbar";
+import ContactUs from "@/components/Contact_us/ContactUs";
+import Footer from "@/components/Footor/Footer";
 
 export default function page() {
   return (
     <>
+      <Navbar />
       <HeroSection />
       <Collection />
       <Slider />
@@ -48,7 +52,9 @@ export default function page() {
       <Certificates />
       <Offer />
       <Testimonials />
-      <Map/>
+      {/* <Map/> */}
+      <ContactUs />
+      <Footer />
     </>
   );
 }
