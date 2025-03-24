@@ -1,7 +1,10 @@
 import React from 'react'
+import Tabs from './tabs'
 
 export default function page() {
   return (
-    <div className='dashboard-container'>page</div>
+    <section className='dashboard-container'>
+      <Tabs />
+    </section>
   )
 }
