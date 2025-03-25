@@ -77,7 +77,7 @@ export default function Tabs() {
             }
         }
         fetchBlogs()
-    }, [])
+    }, [selectedTab === 1])
     
     return (
         <div className="dashboard-wraper">

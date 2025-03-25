@@ -5,7 +5,6 @@ import Loader from "@/components/Loader/Loader";
 
 export default function Blogs({ loading, blog }) {
 
-  // Function to convert buffer to base64 string
   const bufferToBase64 = (buffer) => {
     return `data:image/jpeg;base64,${Buffer.from(buffer).toString('base64')}`;
   };
@@ -15,7 +14,6 @@ export default function Blogs({ loading, blog }) {
       {loading ? <Loader /> : (
         <div className="admin-blogs-container">
           {blog?.data?.map((data, index) => {
-            // Convert buffer to base64 image
             const base64Image = data.blog_img?.data
               ? bufferToBase64(data.blog_img.data)
               : '/images/blogs/blog-image-01.jpeg';
@@ -40,10 +38,7 @@ export default function Blogs({ loading, blog }) {
                       </Link>
                     </h2>
                   </div>
-                  <div className="blog-description">
-                    <p>
-                      {data.metaDesc}
-                    </p>
+                  <div className="blog-description" dangerouslySetInnerHTML={{ __html: data.blog_content }}>
                   </div>
                   <div className="blog-btn">
                     <Link href={`/blogs/${data.blog_slug}`}>
