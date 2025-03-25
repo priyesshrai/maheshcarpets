@@ -1,10 +1,18 @@
 import React from 'react'
 import Data from './Data'
 import { bespoke } from "@/data/productdata.js";
+import Navbar from '@/components/Navbar/Navbar';
+import ContactUs from '@/components/Contact_us/ContactUs';
+import Footer from '@/components/Footor/Footer';
 
 export default function page() {
   return (
-    <Data  data={bespoke}/>
+    <>
+      <Navbar />
+      <Data data={bespoke} />
+      <ContactUs />
+      <Footer />
+    </>
   )
 }
 export const metadata = {

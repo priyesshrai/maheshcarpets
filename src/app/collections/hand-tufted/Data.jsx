@@ -19,10 +19,11 @@ export default function Data({ data }) {
               </div>
               <div className="product-content">
                 <p>
-                  A testament to artistry and innovation, created by pushing yarn
-                  through a canvas using tufting tools. This technique allows for
-                  elaborate patterns, varied texture, and making this a perfect
-                  carpet to make a bold statement
+                  Experience the perfect blend of tradition and contemporary design with our Hand-Tufted Collection at <a href="/" style={{color:"blue"}}>Mahesh Carpets</a>. Expertly crafted by skilled artisans, these carpets are made using a meticulous hand-tufting technique that ensures durability, comfort, and intricate detailing.
+                  <br /> <br />
+                  Designed to add warmth and sophistication to any space, our hand-tufted rugs feature a variety of patterns, textures, and colours—from classic motifs to modern abstracts. Made with high-quality wool and silk blends, each piece offers a plush feel underfoot while being resilient to everyday use.
+                  <br /> <br />
+                  Whether you seek a bold statement rug or a subtle, elegant accent, our collection caters to diverse tastes and interiors. Elevate your home or office with a handcrafted masterpiece that exudes charm and refinement. Explore our Hand-Tufted Collection today and bring home the artistry of Mahesh Carpets.
                 </p>
               </div>
             </div>

@@ -178,7 +178,7 @@ export default function ContactUs() {
                 <i className="hgi-stroke hgi-location-03" style={{ color: "#007bff" }} />
               </div>
               <div className="info-con">
-                <a href="https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en" target="_blank">
+                <a href="https://www.google.com/maps/place/Mahesh+Carpets/@25.2788299,82.9040077,17z/data=!3m1!4b1!4m12!1m5!3m4!2zMjXCsDE2JzQzLjkiTiA4MsKwNTQnMzEuMCJF!8m2!3d25.2788506!4d82.9086227!3m5!1s0x398e335bd619aa8f:0xb489a27d964108e5!8m2!3d25.2788251!4d82.9086211!16s%2Fg%2F11yc0zdjkp?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                   <span>Araji No. 90D GT Road JAGATPUR, VARANASI-221302 Uttar Pradesh</span>
                 </a>
               </div>

@@ -56,12 +56,12 @@ export default function Footer() {
           <div className="footer-container-wraper">
             <div className="footer-logo">
               <Link href='/'>
-              <Image
-                src="/images/logo/logo-01.jpeg"
-                alt="logo"
-                width={280}
-                height={80}
-              />
+                <Image
+                  src="/images/logo/logo-01.jpeg"
+                  alt="logo"
+                  width={280}
+                  height={80}
+                />
               </Link>
             </div>
             {/* <div className="footer-description">
@@ -153,20 +153,20 @@ export default function Footer() {
             <div className="footer-links">
               <ul>
                 <li>
-                  <i className="hgi-stroke hgi-telephone" style={{ color: "#28a745" }}/>
+                  <i className="hgi-stroke hgi-telephone" style={{ color: "#28a745" }} />
                   <Link href="/">
                     <span>+91 9517292555</span>
                   </Link>
                 </li>
                 <li>
-                  <i className="hgi-stroke hgi-mail-at-sign-01" style={{ color: "#C5221F" }}/>
+                  <i className="hgi-stroke hgi-mail-at-sign-01" style={{ color: "#C5221F" }} />
                   <Link href="mailto:info@maheshcarpets.com">
                     <span>info@maheshcarpets.com</span>
                   </Link>
                 </li>
                 <li>
-                  <i className="hgi-stroke hgi-location-03" style={{ color: "#007bff" }}/>
-                  <Link className="lst" href='https://www.google.com/maps?q=25.278850555419922,82.90862274169922&z=17&hl=en' target="_blank">
+                  <i className="hgi-stroke hgi-location-03" style={{ color: "#007bff" }} />
+                  <Link className="lst" href='https://www.google.com/maps/place/Mahesh+Carpets/@25.2788299,82.9040077,17z/data=!3m1!4b1!4m12!1m5!3m4!2zMjXCsDE2JzQzLjkiTiA4MsKwNTQnMzEuMCJF!8m2!3d25.2788506!4d82.9086227!3m5!1s0x398e335bd619aa8f:0xb489a27d964108e5!8m2!3d25.2788251!4d82.9086211!16s%2Fg%2F11yc0zdjkp?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D' target="_blank">
                     <span>Araji No. 90D GT Road JAGATPUR, VARANASI-221302 Uttar Pradesh</span>
                   </Link>
                 </li>

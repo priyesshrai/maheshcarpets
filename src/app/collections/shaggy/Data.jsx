@@ -13,9 +13,11 @@ export default function Data({ data }) {
           </div>
           <div className="product-content">
             <p>
-              Offering unmatched comfort underfoot, crafted using long yarns
-              which gives a cozy feel and an inviting look. Available in solid
-              colors and abstract patterns.
+              Experience the plush luxury of Shaggy Carpets, designed to offer unmatched comfort underfoot. Crafted using long, soft yarns, these carpets create a warm and inviting atmosphere, making every step feel like a dream. Their high-pile texture adds a touch of sophistication while providing a cosy retreat for your feet.
+              <br /> <br />
+              Available in a range of solid colours and abstract patterns, our shaggy carpets effortlessly complement any décor—whether you’re looking to add a pop of colour to your living room, create a snug bedroom setting, or enhance your office space with a touch of modern elegance.
+              <br /> <br />
+              At <a href="/" style={{ color: "blue" }}>Mahesh Carpets</a>, we combine premium craftsmanship with contemporary aesthetics to bring you carpets that are not just stylish but also durable and easy to maintain. Indulge in the soft embrace of our Shaggy Carpet Collection and transform your space into a haven of comfort and warmth.
             </p>
           </div>
         </div>
