@@ -14,7 +14,11 @@ export default function Data({ data }) {
           </div>
           <div className="product-content">
             <p>
-              Crafting rugs that combine artistry, craftsmanship, and individuality. Each piece is custom-designed to perfectly suit the unique style, space, and vision. Whether you are looking for a bold statement or a subtle touch of elegance, our bespoke rugs are tailored to bring your dream design to life.
+              At Mahesh Carpets, we believe that every space deserves a rug as unique as its owner. Our Bespoke Rugs are a perfect blend of artistry, craftsmanship, and individuality, designed to complement your personal style and vision. Whether you seek a bold statement piece or a subtle touch of elegance, we work closely with you to create a rug that perfectly fits your space.
+              <br /> <br />
+              From selecting the finest materials to choosing colours, patterns, and textures, every detail is meticulously tailored to bring your dream design to life. Our skilled artisans ensure that each bespoke rug is not just a floor covering but a masterpiece that reflects your taste and personality.
+              <br /> <br />
+              With <a href="/" style={{ color: "blue" }}>Mahesh Carpets</a>’ Bespoke Collection, luxury is redefined—where your imagination meets exceptional craftsmanship. Transform your interiors with a one-of-a-kind creation that speaks to you and your space like no other.
             </p>
           </div>
         </div>

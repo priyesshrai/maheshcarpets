@@ -158,6 +158,7 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
           initialEditType="wysiwyg"
           useCommandShortcut={true}
           ref={editorRef}
+          initialValue='Start Writing Your Blog Here...'
           placeholder='Start Writing Your Blog Here...'
         />
       </div>

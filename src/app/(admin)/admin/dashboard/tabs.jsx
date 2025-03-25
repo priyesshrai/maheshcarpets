@@ -119,7 +119,7 @@ export default function Tabs() {
                                 <div className="content-icon-wraper">
                                     <div className="content-icons">
                                         <i className="hgi hgi-stroke hgi-user"></i>
-                                        <span>Name</span>
+                                        <span>Mahesh Carpets</span>
                                     </div>
                                     <div className="content-icons" onClick={handleLogOut}>
                                         <i className="hgi hgi-stroke hgi-logout-03"></i>

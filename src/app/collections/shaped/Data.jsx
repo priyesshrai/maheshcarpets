@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Loader from "@/components/Loader/Loader";
 
-export default function Data({data}) {
+export default function Data({ data }) {
 
   return (
     <section className="section">
@@ -19,7 +19,11 @@ export default function Data({data}) {
               </div>
               <div className="product-content">
                 <p>
-                  Distinctive and unconventional floor coverings that break away from the traditional symmetrical designs. Feature uneven shapes, irregular edges, or patterns that create a dynamic and artistic look, making them a focal point in interior design.
+                  Step away from tradition and embrace the unique charm of Asymmetrical Rugs—distinctive floor coverings that challenge conventional design norms. Featuring uneven shapes, irregular edges, and dynamic patterns, these rugs bring an artistic flair to any space, transforming floors into statement pieces.
+                  <br /> <br />
+                  Designed for those who dare to be different, asymmetrical rugs add movement and depth, making them the perfect focal point for modern and eclectic interiors. Whether you choose a fluid, organic form or a striking geometric layout, these rugs inject personality and creativity into your décor.
+                  <br /> <br />
+                  At <a href="/" style={{ color: "blue" }}>Mahesh Carpets</a>, we celebrate design that defies expectations. Our Asymmetrical Rug Collection blends innovation with craftsmanship, offering a seamless mix of style, comfort, and individuality. Elevate your space with a rug that is as bold and unique as you are—because true artistry knows no boundaries.
                 </p>
               </div>
             </div>

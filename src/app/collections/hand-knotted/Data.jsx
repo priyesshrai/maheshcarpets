@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Loader from "@/components/Loader/Loader";
 
-export default function Data({data}) {
+export default function Data({ data }) {
 
   return (
     <section className="section">
@@ -19,11 +19,12 @@ export default function Data({data}) {
               </div>
               <div className="product-content">
                 <p>
-                  A masterpiece of craftsmanship, created by skilled artisans who
-                  meticulously tie individual knots to form intricate patterns.
-                  Known for their unparalleled durability and exquisite detail. Each
-                  hand-knotted piece is a unique work of art, combining heritage and
-                  luxury or a truly sophisticated statement.
+                  A true masterpiece of craftsmanship, Hand-Knotted Carpets are the epitome of luxury and tradition. Created by skilled artisans who meticulously tie individual knots, each piece showcases intricate patterns, breathtaking detail, and unparalleled durability. This age-old technique ensures that no two carpets are ever the same, making every hand-knotted rug a unique work of art.
+
+                  <br /> <br />
+                  Renowned for their longevity and exquisite beauty, these carpets blend heritage with sophistication, bringing a touch of timeless elegance to any space. Whether adorning a classic interior or enhancing a modern setting, their rich textures and refined patterns make a lasting impression.
+                  <br /> <br />
+                  At <a href="/" style={{ color: "blue" }}>Mahesh Carpets</a>, we take pride in preserving this centuries-old tradition while offering designs that cater to contemporary tastes. Experience the charm of handcrafted luxury with our Hand-Knotted Collection, where every thread weaves a story of artistry, passion, and excellence.
                 </p>
               </div>
             </div>
