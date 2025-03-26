@@ -32,7 +32,17 @@ export async function POST(req) {
       imageBuffer = Buffer.from(await image.arrayBuffer());
     }
 
-    const slug = title.toLowerCase().split(" ").join("-");
+    const createSlug = (title) => {
+      return title
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-') 
+        .replace(/^-+|-+$/g, '');
+    };
+
+    const slug = createSlug(title);
 
     const query = `
       INSERT INTO blogs 

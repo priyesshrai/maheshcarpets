@@ -38,6 +38,19 @@ export default function BlogContent({ blogId }) {
 
     // if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
+
+    useEffect(() => {
+        const recordVisit = async () => {
+            try {
+                await axios.post('/api/record-visit', { blogId });
+            } catch (error) {
+                console.error('Failed to record visit:', error);
+            }
+        };
+        recordVisit();
+    }, [blogId]);
+
+
     return (
         <>
             <Navbar />

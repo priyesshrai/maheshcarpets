@@ -107,6 +107,10 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
     editorRef.current?.getInstance().setMarkdown("");
   }
 
+  if (error) {
+    return <h2>{error}</h2>;
+  }
+
   return (
     <section className='write-blog-container'>
       <h2>Start Writing Your Blogs.👇</h2>
