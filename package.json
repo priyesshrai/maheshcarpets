@@ -14,7 +14,7 @@
     "@next/third-parties": "^15.1.6",
     "@radix-ui/react-slot": "^1.1.1",
     "@tabler/icons-react": "^3.26.0",
-    "@toast-ui/react-editor": "^3.1.0",
+    "@toast-ui/react-editor": "^3.2.3",
     "axios": "^1.7.9",
     "bcryptjs": "^3.0.2",
     "class-variance-authority": "^0.7.1",
