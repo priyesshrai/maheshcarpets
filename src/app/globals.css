@@ -2004,6 +2004,7 @@ footer {
           padding: 5px 20px;
           margin-bottom: 10px;
           height: 10rem;
+          overflow: hidden;
 
           p {
             position: relative;
@@ -2682,6 +2683,7 @@ footer {
                     padding: 5px 20px;
                     margin-bottom: 10px;
                     height: 10rem;
+                    overflow: hidden;
 
                     p {
                       position: relative;
