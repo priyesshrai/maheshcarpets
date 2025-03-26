@@ -26,7 +26,7 @@ export default function Tabs() {
             tabIcon: "hgi hgi-stroke hgi-license-draft",
         }
     ]
-    const [selectedTab, setSelectedTab] = useState(1)
+    const [selectedTab, setSelectedTab] = useState(0)
     const ActiveTab = tabConfig[selectedTab].tabComponent
     const [collapseMenu, setCollapseMenu] = useState(false)
     const [loading, setLoading] = useState(false)
@@ -40,6 +40,8 @@ export default function Tabs() {
         metaDescription: "",
     })
     const [blog, setBlog] = useState([])
+    const [totalVisit, setTotalVisit] = useState(0);
+    const [totalBlogs, setTotalBlogs] = useState(0);
 
     async function handleLogOut() {
         toast.promise(
@@ -64,12 +66,14 @@ export default function Tabs() {
             }
         );
     }
+
     useEffect(() => {
         async function fetchBlogs() {
             setLoading(true)
             try {
                 const res = await axios.get('/api/get-blogs')
                 setBlog(res.data)
+                setTotalBlogs(res.data.length)
             } catch (error) {
                 console.error("Error fetching blogs:", error)
             } finally {
@@ -78,7 +82,22 @@ export default function Tabs() {
         }
         fetchBlogs()
     }, [selectedTab === 1])
-    
+
+    useEffect(() => {
+        async function fetchTotalVisit() {
+            try {
+                const res = await axios.get('/api/total-visits')
+                setTotalVisit(res.data.totalVisits)
+                const ress = await axios.get('/api/get-blogs')
+                setTotalBlogs(ress.data.data.length)
+            } catch (error) {
+                console.error("Error fetching total visit:", error)
+            }
+        }
+        fetchTotalVisit()
+    }, [])
+
+
     return (
         <div className="dashboard-wraper">
             <aside className={`aside-bar ${collapseMenu ? 'collapse-menu' : "opn-menu"} `}>
@@ -142,6 +161,8 @@ export default function Tabs() {
                             setDisableBtn={setDisableBtn}
                             blog={blog}
                             setBlog={setBlog}
+                            totalBlogs={totalBlogs}
+                            totalVisit={totalVisit}
                         />
                     </div>
                 </div>

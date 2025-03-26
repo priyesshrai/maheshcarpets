@@ -2492,6 +2492,34 @@ footer {
                 }
               }
             }
+
+            .content-search-bar-container{
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              width: 400px;
+
+              .content-search-bar{
+                position: relative;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: 1px solid #a8a8a8;
+                border-radius: 35px;
+                padding: 5px 10px;
+
+                input{
+                  flex: 1;
+                  border: none;
+                  outline: none;
+                  font-size: 18px;
+                  background-color: transparent;
+                  /* padding: 5px 10px; */
+                }
+              }
+            }
           }
         }
         .main-content-body {
