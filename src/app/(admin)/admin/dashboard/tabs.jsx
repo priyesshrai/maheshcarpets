@@ -84,14 +84,17 @@ export default function Tabs() {
     }, [selectedTab === 1])
 
     useEffect(() => {
+        setLoading(true)
         async function fetchTotalVisit() {
             try {
                 const res = await axios.get('/api/total-visits')
                 setTotalVisit(res.data.totalVisits)
                 const ress = await axios.get('/api/get-blogs')
                 setTotalBlogs(ress.data.data.length)
+                setLoading(false)
             } catch (error) {
                 console.error("Error fetching total visit:", error)
+                setLoading(false)
             }
         }
         fetchTotalVisit()
