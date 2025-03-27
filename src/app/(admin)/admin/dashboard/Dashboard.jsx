@@ -3,7 +3,7 @@ import Loader from '@/components/Loader/Loader'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-export default function Dashboard({ totalVisit, totalBlogs, blog, loading }) {
+export default function Dashboard({ totalVisit, totalBlogs, blog, loading, deleteBlog, updateBlog }) {
   const [uniqueVisits, setUniqueVisits] = useState({});
   useEffect(() => {
     const fetchUniqueVisits = async () => {
@@ -92,12 +92,12 @@ export default function Dashboard({ totalVisit, totalBlogs, blog, loading }) {
                       </div>
                     </div>
                     <div className="action-box blog-action-btn">
-                      <div className="action-btn">
+                      <div className="action-btn" onClick={() => updateBlog(data.blog_slug)}>
                         <i className="hgi hgi-stroke hgi-pencil-edit-02"></i>
                       </div>
                     </div>
                     <div className="action-box blog-action-btn">
-                      <div className="action-btn">
+                      <div className="action-btn" onClick={() => deleteBlog(data.blog_slug)}>
                         <i className="hgi hgi-stroke hgi-delete-02"></i>
                       </div>
                     </div>

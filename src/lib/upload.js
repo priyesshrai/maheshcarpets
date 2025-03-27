@@ -1,7 +1,7 @@
 import multer from "multer";
-import cloudinary from "cloudinary";
+import { v2 as cloudinary } from 'cloudinary';
 
-cloudinary.v2.config({
+cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
@@ -16,7 +16,7 @@ const fileUpload = async (buffer, fileName) => {
     if (!buffer) return null;
 
     const result = await new Promise((resolve, reject) => {
-      const stream = cloudinary.v2.uploader.upload_stream(
+      const stream = cloudinary.uploader.upload_stream(
         {
           resource_type: "auto",
           public_id: fileName,

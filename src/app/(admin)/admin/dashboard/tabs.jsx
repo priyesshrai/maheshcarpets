@@ -67,19 +67,20 @@ export default function Tabs() {
         );
     }
 
-    useEffect(() => {
-        async function fetchBlogs() {
-            setLoading(true)
-            try {
-                const res = await axios.get('/api/get-blogs')
-                setBlog(res.data)
-                setTotalBlogs(res.data.length)
-            } catch (error) {
-                console.error("Error fetching blogs:", error)
-            } finally {
-                setLoading(false)
-            }
+    async function fetchBlogs() {
+        setLoading(true)
+        try {
+            const res = await axios.get('/api/get-blogs')
+            setBlog(res.data)
+            setTotalBlogs(res.data.length)
+        } catch (error) {
+            console.error("Error fetching blogs:", error)
+        } finally {
+            setLoading(false)
         }
+    }
+
+    useEffect(() => {
         fetchBlogs()
     }, [selectedTab === 1])
 
@@ -100,6 +101,28 @@ export default function Tabs() {
         fetchTotalVisit()
     }, [])
 
+    async function handleDelete(blogId) {
+        toast.promise(
+            axios
+                .delete(`/api/delete-blog?id=${blogId}`)
+                .then((response) => {
+                    fetchBlogs()
+                })
+                .catch((error) => {
+                    console.log("Error while deleting this blog :- ", error.response.data.message);
+                    throw error;
+                }),
+            {
+                loading: "Deleting Blog Please wait...",
+                success: "Blog deleted successfully",
+                error: "Error while deleting this blog. Please try again.",
+            }
+        );
+    }
+
+    async function handleUpdateBlog(blogId) {
+        console.log(blogId);
+    }
 
     return (
         <div className="dashboard-wraper">
@@ -166,6 +189,8 @@ export default function Tabs() {
                             setBlog={setBlog}
                             totalBlogs={totalBlogs}
                             totalVisit={totalVisit}
+                            deleteBlog={handleDelete}
+                            updateBlog={handleUpdateBlog}
                         />
                     </div>
                 </div>
