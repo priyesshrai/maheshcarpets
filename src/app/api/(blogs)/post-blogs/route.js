@@ -1,11 +1,19 @@
+import { NextResponse } from "next/server";
+import { upload, fileUpload } from "@/lib/upload";
 import pool from "@/lib/db.con";
 import ValidateAdmin from "@/lib/validateAdmin";
 
-export async function POST(req) {
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
+export const POST = async (req) => {
   try {
-    const valideAdmin = await ValidateAdmin(req);
-    if (!valideAdmin) {
-      return Response.json(
+    const validAdmin = await ValidateAdmin(req);
+    if (!validAdmin) {
+      return NextResponse.json(
         { success: false, message: "You are not authorized" },
         { status: 401 }
       );
@@ -20,29 +28,30 @@ export async function POST(req) {
     const image = formData.get("image");
 
     if (!title || !content || !metaTitle || !metaDescription) {
-      return Response.json(
+      return NextResponse.json(
         { success: false, message: "All fields are required" },
         { status: 400 }
       );
-    }
-
-    let imageBuffer = null;
-
-    if (image) {
-      imageBuffer = Buffer.from(await image.arrayBuffer());
     }
 
     const createSlug = (title) => {
       return title
         .toLowerCase()
         .trim()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-') 
-        .replace(/^-+|-+$/g, '');
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/-+/g, "-")
+        .replace(/^-+|-+$/g, "");
     };
 
     const slug = createSlug(title);
+
+    let imageUrl = null;
+    if (image) {
+      const buffer = Buffer.from(await image.arrayBuffer());
+      const fileName = `${Date.now()}-${image.name.replace(/\s+/g, "_")}`;
+      imageUrl = await fileUpload(buffer, fileName);
+    }
 
     const query = `
       INSERT INTO blogs 
@@ -53,7 +62,7 @@ export async function POST(req) {
       title,
       content,
       slug,
-      imageBuffer,
+      imageUrl,
       metaTitle,
       metaDescription,
       markdownContent,
@@ -61,19 +70,20 @@ export async function POST(req) {
 
     const [result] = await pool.execute(query, values);
 
-    return Response.json(
+    return NextResponse.json(
       {
         success: true,
         message: "Blog added successfully",
         blogId: result.insertId,
+        imageUrl,
       },
       { status: 201 }
     );
   } catch (error) {
     console.error("Error:", error);
-    return Response.json(
-      { success: false, message: "Internal server error" },
+    return NextResponse.json(
+      { success: false, message: error.message || "Internal server error" },
       { status: 500 }
     );
   }
-}
+};

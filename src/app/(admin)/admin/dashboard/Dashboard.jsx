@@ -5,10 +5,6 @@ import React, { useEffect, useState } from 'react'
 
 export default function Dashboard({ totalVisit, totalBlogs, blog, loading }) {
   const [uniqueVisits, setUniqueVisits] = useState({});
-  const bufferToBase64 = (buffer) => {
-    return `data:image/jpeg;base64,${Buffer.from(buffer).toString('base64')}`;
-  };
-
   useEffect(() => {
     const fetchUniqueVisits = async () => {
       if (blog?.data?.length) {
@@ -70,16 +66,12 @@ export default function Dashboard({ totalVisit, totalBlogs, blog, loading }) {
           ) : (
             <>
               {blog?.data?.map((data, index) => {
-                const base64Image = data.blog_img?.data
-                  ? bufferToBase64(data.blog_img.data)
-                  : '/images/blogs/blog-image-01.jpeg';
-
                 return (
                   <div className="blogs-actions" key={index}>
                     <div className="action-box blogs-action-image">
                       <div className="action-img-container">
                         <Image
-                          src={base64Image}
+                          src={data.blog_img}
                           width={200}
                           height={200}
                           alt='img'
