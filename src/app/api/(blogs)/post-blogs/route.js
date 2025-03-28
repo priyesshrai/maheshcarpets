@@ -20,6 +20,7 @@ export const POST = async (req) => {
     }
 
     const formData = await req.formData();
+    const blogId = formData.get("blogId");
     const title = formData.get("title");
     const content = formData.get("content");
     const metaTitle = formData.get("metaTitle");
@@ -45,12 +46,45 @@ export const POST = async (req) => {
     };
 
     const slug = createSlug(title);
-
     let imageUrl = null;
     if (image) {
       const buffer = Buffer.from(await image.arrayBuffer());
       const fileName = `${Date.now()}-${image.name.replace(/\s+/g, "_")}`;
       imageUrl = await fileUpload(buffer, fileName);
+    }
+
+    if (blogId) {
+      const [existingBlog] = await pool.execute(
+        `SELECT * FROM blogs WHERE blog_id = ?`,
+        [blogId]
+      );
+
+      if (existingBlog.length > 0) {
+        const updateQuery = `
+          UPDATE blogs 
+          SET blog_title = ?, blog_content = ?, blog_img = ?, metaTitle = ?, metaDesc = ?, markdownContent = ?, 
+          blog_slug = ? WHERE blog_id = ?`;
+        const updateValues = [
+          title,
+          content,
+          imageUrl,
+          metaTitle,
+          metaDescription,
+          markdownContent,
+          slug,
+          blogId,
+        ];
+        await pool.execute(updateQuery, updateValues);
+
+        return NextResponse.json(
+          {
+            success: true,
+            message: "Blog updated successfully",
+            blogId: existingBlog[0].id,
+          },
+          { status: 200 }
+        );
+      }
     }
 
     const query = `

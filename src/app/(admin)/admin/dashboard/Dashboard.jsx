@@ -1,9 +1,10 @@
 'use client'
+import FormLoader from '@/components/FormLoader/FormLoader';
 import Loader from '@/components/Loader/Loader'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
-export default function Dashboard({ totalVisit, totalBlogs, blog, loading, deleteBlog, updateBlog }) {
+export default function Dashboard({ totalVisit, totalBlogs, blog, loading, deleteBlog, updateBlog, updateBtnClicked }) {
   const [uniqueVisits, setUniqueVisits] = useState({});
   useEffect(() => {
     const fetchUniqueVisits = async () => {
@@ -28,7 +29,6 @@ export default function Dashboard({ totalVisit, totalBlogs, blog, loading, delet
 
     fetchUniqueVisits();
   }, [blog?.data]);
-
   return (
     <section className='admin-dashboard-page'>
       <div className="admin-dashboard-conatiner">
@@ -92,8 +92,10 @@ export default function Dashboard({ totalVisit, totalBlogs, blog, loading, delet
                       </div>
                     </div>
                     <div className="action-box blog-action-btn">
-                      <div className="action-btn" onClick={() => updateBlog(data.blog_slug)}>
-                        <i className="hgi hgi-stroke hgi-pencil-edit-02"></i>
+                      <div className="action-btn" onClick={() => updateBlog(data.blog_slug, index)}>
+                        {updateBtnClicked === index ? <FormLoader /> : (
+                          <i className="hgi hgi-stroke hgi-pencil-edit-02"></i>
+                        )}
                       </div>
                     </div>
                     <div className="action-box blog-action-btn">

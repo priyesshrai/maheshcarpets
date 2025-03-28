@@ -33,6 +33,7 @@ export default function Tabs() {
     const [error, setError] = useState('')
     const [disableBtn, setDisableBtn] = useState(true)
     const [blogData, setBlogData] = useState({
+        blogId:"",
         title: "",
         content: "",
         image: "",
@@ -42,6 +43,7 @@ export default function Tabs() {
     const [blog, setBlog] = useState([])
     const [totalVisit, setTotalVisit] = useState(0);
     const [totalBlogs, setTotalBlogs] = useState(0);
+    const [updateBtnClicked, setUpdateBtnClicked] = useState(null)
 
     async function handleLogOut() {
         toast.promise(
@@ -120,8 +122,28 @@ export default function Tabs() {
         );
     }
 
-    async function handleUpdateBlog(blogId) {
-        console.log(blogId);
+    async function handleUpdateBlog(blogId, idx) {
+        setUpdateBtnClicked(idx)
+        try {
+            const res = await axios.get(`/api/single-blog/${blogId}`);
+            const updBlogData = res.data.data
+            
+            setBlogData({
+                blogId:updBlogData.blog_id,
+                title:updBlogData.blog_title,
+                image:updBlogData.blog_img,
+                content:updBlogData.blog_content,
+                metaTitle:updBlogData.blog_title,
+                metaDescription:updBlogData.blog_title,
+            })
+            setUpdateBtnClicked(false)
+            setSelectedTab(2)
+        } catch (err) {
+            console.error("Error fetching blog:", err);
+            setError(err.response?.data?.message || "Failed to load blog");
+        } finally {
+            setUpdateBtnClicked(false);
+        }
     }
 
     return (
@@ -191,6 +213,7 @@ export default function Tabs() {
                             totalVisit={totalVisit}
                             deleteBlog={handleDelete}
                             updateBlog={handleUpdateBlog}
+                            updateBtnClicked={updateBtnClicked}
                         />
                     </div>
                 </div>
