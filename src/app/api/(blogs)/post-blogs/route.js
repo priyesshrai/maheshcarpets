@@ -24,9 +24,12 @@ export const POST = async (req) => {
     const title = formData.get("title");
     const content = formData.get("content");
     const metaTitle = formData.get("metaTitle");
+    const blogSlug = formData.get("slug");
     const metaDescription = formData.get("metaDescription");
     const markdownContent = formData.get("markdownContent");
     const image = formData.get("image");
+
+    
 
     if (!title || !content || !metaTitle || !metaDescription) {
       return NextResponse.json(
@@ -45,7 +48,8 @@ export const POST = async (req) => {
         .replace(/^-+|-+$/g, "");
     };
 
-    const slug = createSlug(title);
+    const slug = createSlug(blogSlug);
+    
     let imageUrl = null;
 
     if (blogId) {
