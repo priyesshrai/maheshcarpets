@@ -37,6 +37,7 @@ export default function Tabs() {
         title: "",
         content: "",
         image: "",
+        slug:"",
         metaTitle: "",
         metaDescription: "",
     })
@@ -134,6 +135,7 @@ export default function Tabs() {
                 image:updBlogData.blog_img,
                 content:updBlogData.blog_content,
                 metaTitle:updBlogData.blog_title,
+                slug:updBlogData.blog_slug,
                 metaDescription:updBlogData.blog_title,
             })
             setUpdateBtnClicked(false)

@@ -53,6 +53,9 @@ export default function BlogContent({ blogId }) {
                             <div className="single-blog-page-title">
                                 <h1>{blog.blog_title}</h1>
                             </div>
+                            <div className='blog-img'>
+                                <img src={blog.blog_img} alt={blog.title} />
+                            </div>
                             <div className="blog-content" dangerouslySetInnerHTML={{ __html: blog.blog_content }}></div>
                         </div>
                     )

@@ -32,7 +32,7 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
   };
 
   useEffect(() => {
-    if (blogData.title && blogData.metaTitle && blogData.metaDescription && blogData.image) {
+    if (blogData.title && blogData.metaTitle && blogData.metaDescription && blogData.image && blogData.slug) {
       setDisableBtn(false);
     } else {
       setDisableBtn(true);
@@ -50,6 +50,7 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
     formData.append("blogId", blogData?.blogId || null)
     formData.append('title', blogData.title);
     formData.append('metaTitle', blogData.metaTitle);
+    formData.append('slug', blogData.slug);
     formData.append('metaDescription', blogData.metaDescription);
     formData.append('content', content);
     formData.append('markdownContent', markdownContent);
@@ -67,6 +68,7 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
             setBlogData({
               title: "",
               metaTitle: "",
+              slug:"",
               metaDescription: "",
               image: null,
             });
@@ -92,6 +94,7 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
       title: "",
       metaTitle: "",
       metaDescription: "",
+      slug:"",
       image: null,
     });
     imageref.current.value = '';
@@ -140,6 +143,16 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
             value={blogData.metaTitle}
             onChange={handleChange}
           />
+
+          <br />
+          <br />
+          <label htmlFor="slug">Blog URL <span>*</span></label>
+          <input 
+          type="text" 
+          id='slug' 
+          name='slug' 
+          value={blogData.slug} 
+          onChange={handleChange} placeholder="Blog Custom URL" />
         </div>
         <div className="write-blog-input-container">
           <label htmlFor="metaDesc">Meta Description <span>*</span></label>
