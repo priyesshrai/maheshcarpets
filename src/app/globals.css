@@ -2146,8 +2146,8 @@ footer {
       width: 100%;
       border-collapse: collapse;
       border-radius: 8px;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
+      /* overflow: hidden; */
+      /* font-family: Arial, sans-serif; */
       background: #fff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       overflow-x: auto;
