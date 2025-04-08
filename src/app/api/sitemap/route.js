@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { NextResponse } from "next/server";
 import {
   handloomData,
@@ -23,6 +24,7 @@ export async function GET() {
     ...shaped,
   ];
   const blogs = await getAllBlogs();
+  
 
   const staticPages = ["", "our-story", "contact", "blogs"];
 
@@ -56,17 +58,16 @@ export async function GET() {
       </url>`;
     }),
 
-    blogs.map(
-      (blog) => `
-  <url>
-    <loc>${BASE_URL}blogs/${blog.slug}</loc>
-    <lastmod>${new Date(
-      blog.updatedAt || blog.createdAt || new Date()
-    ).toISOString()}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-`
+    blogs?.data.map(
+      (blog) =>
+        ` <url>
+          <loc>${BASE_URL}blogs/${blog.blog_slug}</loc>
+          <lastmod>${new Date(
+            blog.updatedAt || blog.createdAt || new Date()
+          ).toISOString()}</lastmod>
+          <changefreq>weekly</changefreq>
+          <priority>0.6</priority>
+        </url>`
     ),
   ].join("\n");
 

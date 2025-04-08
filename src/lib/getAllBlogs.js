@@ -1,10 +1,11 @@
 import axios from "axios";
 
 export async function getAllBlogs() {
-  const res = await axios.get("/api/get-blogs");
-    if (res.status !== 200) {
-        throw new Error("Failed to fetch blogs");
-    }
-    console.log(res.data);
-  return res.data;
+  try {
+    const res = await axios.get("https://www.maheshcarpets.com/api/get-blogs");
+    return res.data;
+  } catch (err) {
+    console.error("Failed to fetch blogs:", err.message);
+    return [];
+  }
 }
