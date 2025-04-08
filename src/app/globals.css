@@ -2981,6 +2981,74 @@ footer {
   color: #4b8ef0;
 }
 
+.ads-container{
+  position: fixed;
+  inset: 0;
+  background-color: #00000031;
+  backdrop-filter: blur(10px);
+  z-index: -9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+
+  .ads-wraper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    transform: scale(0.6);
+    filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    
+
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .ads-close-btn{
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 40px;
+      height: 40px;
+      padding: 2px;
+      border-radius: 50%;
+      background-color: var(--dark-font);
+      border: 1px solid var(--light-font);
+      cursor: pointer;
+
+      i{
+        display: block;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+      }
+    }
+  }
+}
+.ads-wraper.active-ads {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  filter: blur(0);
+}
+.ads-container.active-ads-container{
+  opacity: 1;
+  z-index: 9999999;
+}
+
 @media (max-width: 1024px) {
   .section {
     padding: 3% 5%;

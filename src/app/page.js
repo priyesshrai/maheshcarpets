@@ -40,6 +40,7 @@ import Loader from "@/components/Loader/Loader";
 import Navbar from "@/components/Navbar/Navbar";
 import ContactUs from "@/components/Contact_us/ContactUs";
 import Footer from "@/components/Footor/Footer";
+import Ads from "@/components/Ads/Ads";
 
 export default function page() {
   return (
@@ -52,9 +53,10 @@ export default function page() {
       <Certificates />
       <Offer />
       <Testimonials />
-      {/* <Map/> */}
+      <Map/>
       <ContactUs />
       <Footer />
+      <Ads/>
     </>
   );
 }
