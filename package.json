@@ -17,6 +17,7 @@
     "@toast-ui/react-editor": "^3.2.3",
     "axios": "^1.7.9",
     "bcryptjs": "^3.0.2",
+    "browser-image-compression": "^2.0.2",
     "class-variance-authority": "^0.7.1",
     "cloudinary": "^2.6.0",
     "clsx": "^2.1.1",
