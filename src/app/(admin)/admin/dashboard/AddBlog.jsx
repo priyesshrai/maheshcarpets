@@ -7,12 +7,13 @@ import { useEffect, useRef } from 'react';
 import FormLoader from '@/components/FormLoader/FormLoader';
 import toast, { Toaster } from "react-hot-toast";
 import axios from 'axios';
+import imageCompression from "browser-image-compression";
 
 export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableBtn, error, setError, loading, setLoading }) {
   const editorRef = useRef();
   const imageref = useRef();
   const titleRef = useRef();
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setBlogData((prev) => ({
@@ -21,13 +22,25 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
     }));
   };
 
-  const handleFileChange = (e) => {
+  const handleFileChange = async (e) => {
     const file = e.target.files[0];
     if (file) {
-      setBlogData((prev) => ({
-        ...prev,
-        image: file,
-      }));
+      try {
+        const options = {
+          maxSizeMB: 1,
+          maxWidthOrHeight: 1024,
+          useWebWorker: true,
+        };
+
+        const compressedFile = await imageCompression(file, options);
+
+        setBlogData((prev) => ({
+          ...prev,
+          image: compressedFile,
+        }));
+      } catch (err) {
+        console.error("Image compression error:", err);
+      }
     }
   };
 
@@ -54,9 +67,7 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
     formData.append('metaDescription', blogData.metaDescription);
     formData.append('content', content);
     formData.append('markdownContent', markdownContent);
-    if (blogData.image) {
-      formData.append('image', blogData.image);
-    }
+    formData.append('image', blogData.image);
 
     await toast.promise(
       axios.post("/api/post-blogs", formData, {
@@ -68,13 +79,13 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
             setBlogData({
               title: "",
               metaTitle: "",
-              slug:"",
+              slug: "",
               metaDescription: "",
               image: null,
             });
             imageref.current.value = '';
             editorRef.current?.getInstance().setMarkdown("");
-            titleRef.current.focus(); 
+            titleRef.current.focus();
             setError('');
           }
         }),
@@ -94,7 +105,7 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
       title: "",
       metaTitle: "",
       metaDescription: "",
-      slug:"",
+      slug: "",
       image: null,
     });
     imageref.current.value = '';
@@ -147,12 +158,12 @@ export default function AddBlog({ blogData, setBlogData, disableBtn, setDisableB
           <br />
           <br />
           <label htmlFor="slug">Blog URL <span>*</span></label>
-          <input 
-          type="text" 
-          id='slug' 
-          name='slug' 
-          value={blogData.slug} 
-          onChange={handleChange} placeholder="Blog Custom URL" />
+          <input
+            type="text"
+            id='slug'
+            name='slug'
+            value={blogData.slug}
+            onChange={handleChange} placeholder="Blog Custom URL" />
         </div>
         <div className="write-blog-input-container">
           <label htmlFor="metaDesc">Meta Description <span>*</span></label>
