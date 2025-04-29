@@ -3,6 +3,7 @@ import ContactUs from '@/components/Contact_us/ContactUs'
 import Footer from '@/components/Footor/Footer'
 import Navbar from '@/components/Navbar/Navbar'
 import React, { useState } from 'react'
+import FaqSchema from './FaqSchema'
 
 export default function Faq() {
     const faqData = [
@@ -48,6 +49,7 @@ export default function Faq() {
 
     return (
         <>
+            <FaqSchema />
             <Navbar />
             <section className='blog-header' style={{ backgroundImage: "url('/images/faq/01.jpg')", height: "13rem" }}>
                 <div className="blog-header-container">
