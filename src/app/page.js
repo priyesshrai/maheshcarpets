@@ -53,7 +53,7 @@ export default function page() {
       <Certificates />
       <Offer />
       <Testimonials />
-      <Map/>
+      {/* <Map/> */}
       <ContactUs />
       <Footer />
       {/* <Ads/> */}

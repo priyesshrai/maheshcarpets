@@ -50,7 +50,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/handTufted/collection.jpg"
+                  src="/images/handTufted/collection-2.png"
                   alt="collection1"
                   width={3000}
                   height={3000}
@@ -109,7 +109,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/hand-knotted/collection.jpg"
+                  src="/images/hand-knotted/collection-2.png"
                   alt="collection1"
                   width={3000}
                   height={3000}
