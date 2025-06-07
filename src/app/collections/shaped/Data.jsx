@@ -12,7 +12,7 @@ export default function Data({ data }) {
           <div className="pro-details-container">
             <div className="pro-text-container">
               <div className="product-title">
-                <h1>Asymmetrical Rugs</h1>
+                <h1>Asymmetrical</h1>
               </div>
               <div className="product-banner">
                 <Image src='/images/shaped/banner.png' style={{ height: '500px', objectFit: "cover" }} width={1000} height={1000} alt="Flatweave banner" className="bann-img" />

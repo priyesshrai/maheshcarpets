@@ -15,7 +15,7 @@ export default function Data({ data }) {
                 <h1>Hand Knotted</h1>
               </div>
               <div className="product-banner">
-                <Image src='/images/hand-knotted/banner.jpg' width={500} height={500} alt="Flatweave banner" />
+                <Image src='/images/hand-knotted/banner.png' width={1000} height={1000} style={{ height: "600px" }} alt="Flatweave banner" />
               </div>
               <div className="product-content">
                 <p>

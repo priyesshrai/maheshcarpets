@@ -10,7 +10,11 @@ export default function Data({ data }) {
       <div className="product-section">
         <div className="product-desc">
           <div className="product-title">
-            <h1>Bespoke Rugs</h1>
+            <h1>Bespoke</h1>
+          </div>
+          <div className="product-banner" style={{marginBottom:"30px"}}>
+            <Image src='/images/bespoke/banner.png' width={1000} height={1000} alt="handloom banner" 
+            style={{height:"600px"}} />
           </div>
           <div className="product-content">
             <p>
