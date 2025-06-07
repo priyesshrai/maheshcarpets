@@ -1244,6 +1244,8 @@ footer {
     .product-banner img {
       border-radius: 20px;
       width: 100%;
+      object-fit: cover;
+      object-position: bottom;
     }
 
     .product-title {

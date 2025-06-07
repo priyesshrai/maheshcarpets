@@ -11,6 +11,10 @@ export default function Data({ data }) {
           <div className="product-title">
             <h1>Shaggy</h1>
           </div>
+          <div className="product-banner" style={{ marginBottom: "30px" }}>
+            <Image src='/images/shaggy/banner.png' width={1000} height={1000} alt="handloom banner"
+              style={{ height: "600px" }} />
+          </div>
           <div className="product-content">
             <p>
               Experience the plush luxury of Shaggy Carpets, designed to offer unmatched comfort underfoot. Crafted using long, soft yarns, these carpets create a warm and inviting atmosphere, making every step feel like a dream. Their high-pile texture adds a touch of sophistication while providing a cosy retreat for your feet.

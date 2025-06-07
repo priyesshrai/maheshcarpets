@@ -5,7 +5,7 @@ export async function middleware(req) {
 
   const isPublicPath = req.nextUrl.pathname === "/login/admin";
   const isAdminRoute = req.nextUrl.pathname.startsWith("/admin");
-  console.log(req.nextUrl.pathname);
+  // console.log(req.nextUrl.pathname);
   
   if (isPublicPath && token) {
     return NextResponse.redirect(new URL("/admin/dashboard", req.url));
