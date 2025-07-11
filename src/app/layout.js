@@ -40,7 +40,7 @@ const yatraOne = Yatra_One({
 });
 
 export const metadata = {
-  title: "Mahesh Carpets – Luxury Handcrafted Carpets & Rugs",
+  title: "Mahesh Carpets – Luxury Handmade Rugs and Home Decor",
   description:
     "Explore premium handcrafted carpets and rugs at Mahesh Carpets. From hand-knotted to bespoke designs, find the perfect piece to elevate your space.",
 };
