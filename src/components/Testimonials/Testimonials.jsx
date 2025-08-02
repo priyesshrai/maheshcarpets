@@ -46,4 +46,8 @@ const testimonials = [
     name: "DOMOTEX Germany, Hannover",
     src: "/images/fair/fair_domotex.jpg",
   },
+  {
+    name: "DOMOTEX Shanghai, China",
+    src: "/images/fair/fair_shanghai.jpeg",
+  },
 ];

@@ -1754,15 +1754,15 @@ footer {
     position: inherit;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 20px;
+    row-gap: 40px;
 
     div {
       height: min-content;
       position: inherit;
       cursor: pointer;
-      margin-bottom: 25px;
     }
 
     .trade-show-img {
