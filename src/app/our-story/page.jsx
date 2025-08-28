@@ -147,6 +147,15 @@ export default function page() {
                       style={{ height: "100%" }}
                     />
                   </a>
+                  <a href="https://jpdepc.org/" target="_blank">
+                    <Image
+                      src="/images/certificates/4.png"
+                      width={200}
+                      height={200}
+                      alt="certificate1"
+                      style={{ height: "100%" }}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
